@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tools.amankumar.ai
+
+# Sitemaps
+Sitemap: https://tools.amankumar.ai/sitemap.xml

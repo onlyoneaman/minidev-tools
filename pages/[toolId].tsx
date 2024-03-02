@@ -14,8 +14,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { toolId } = params;
-  const content = await markdownToHtml(toolId as string);
+  const content = await markdownToHtml(params?.toolId as string);
 
   return { props: { content } };
 }
