@@ -1,7 +1,7 @@
+export const runtime = 'edge';
+
 // Determine if running in a Cloudflare Worker environment
 const isCloudflareWorker = typeof Response === "function" && typeof addEventListener === "function";
-
-export const runtime = isCloudflareWorker ? 'edge' : 'node';
 
 export default async (req, res) => {
     let url;
