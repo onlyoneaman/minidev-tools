@@ -10,5 +10,11 @@
     "title": "Lorem Ipsum Generator",
     "description": "Generate a random lorem ipsum text",
     "component": "LoremIpsumGenerator"
+  },
+  {
+    "id": "check-gpt-bot-crawl",
+    "title": "Check GPT Bot Crawl",
+    "description": "Check if a user agent is a GPT bot",
+    "component": "CheckGPTBotCrawl"
   }
 ]

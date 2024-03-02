@@ -2,7 +2,7 @@
 
 - [X] Password Generator
 - [X] Lorem Ipsum Generator
-- [ ] GPT Bot Crawl Tester
+- [X] GPT Bot Crawl Tester
 - [ ] URL Encode
 - [ ] URL Decode
 - [ ] Base64 Encode
