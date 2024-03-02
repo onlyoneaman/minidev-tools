@@ -10,7 +10,7 @@ const PasswordGeneratorPage: React.FC = () => {
         <meta name="description" content="Generate a secure password easily." />
       </Head>
       <div className="container mx-auto">
-        <h1 className="text-xl font-bold my-4">Password Generator</h1>
+        <h1 className="text-xl font-bold my-3">Password Generator</h1>
         <PasswordGenerator />
       </div>
     </>
