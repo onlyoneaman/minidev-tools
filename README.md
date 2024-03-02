@@ -1,6 +1,6 @@
 ## MiniDev Tools
 
-This is a project to create minidev tools which are often used.
+minidev.tools is an open-source collection of mini dev tools to help you in your daily development.
 
 You can checkout it here [Minidev.Tools](https://minidev.tools)
 

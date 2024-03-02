@@ -7,7 +7,7 @@ const About = () => {
     "Community First"
   ]
 
-  return(
+  return (
     <div className={"space-y-2"}>
       <h2
         className={"text-lg font-bold"}
@@ -15,6 +15,18 @@ const About = () => {
         About MiniDev Tools
       </h2>
       <div className={"space-y-1"}>
+        <p className={"space-x-1"}>
+          <span>
+            MiniDev.tools is an open source project. You can find the source code on
+          </span>
+          <a
+            className={"underline"}
+            href={"https://github.com/onlyoneaman/mini-tools"}
+            target={"_blank"}
+          >
+            Github
+          </a>
+        </p>
         <p>
           Productivity is a valuable commodity today. As a result, companies spend
           thousands of dollars on improving and managing productivity.
