@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 const Header = () => {
 
   return (
     <header
       className="container"
     >
-      <h1>
+      <Link href="/">
         Mini Tools
-      </h1>
+      </Link>
     </header>
   )
 };
