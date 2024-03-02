@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import React from 'react';
 import Head from 'next/head';
 import Layout from "@/components/Layout";
+import {ThemeProvider} from "@/components/ThemeProvider";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
@@ -14,11 +15,18 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         {/* Favicon */}
         <link rel="icon" href="/public/favicon.ico" />
       </Head>
-      <div className="min-h-screen">
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </div>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        // enableSystem={true}
+        // disableTransitionOnChange
+      >
+        <div className="min-h-screen">
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </div>
+      </ThemeProvider>
     </>
   );
 };

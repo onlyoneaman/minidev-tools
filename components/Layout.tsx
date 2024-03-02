@@ -11,7 +11,7 @@ type LayoutProps = {
 const Layout = ({children}: LayoutProps) => {
 
   return (
-    <div className={"min-h-screen flex flex-col bg-eerie text-white p-3"}>
+    <div className={"min-h-screen flex flex-col bg-stone-200 text-eerie dark:bg-eerie dark:text-white p-3"}>
       <Header/>
 
       <Toaster position="top-center" />

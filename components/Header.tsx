@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {ModeToggle} from "@/components/ModeToggle";
 
 const Header = () => {
 
@@ -6,9 +7,20 @@ const Header = () => {
     <header
       className="container"
     >
-      <Link href="/">
-        miniTools
-      </Link>
+      <div className={"flex justify-between items-center"}>
+        <div>
+          <Link
+            className="text-2xl font-bold hover:underline"
+            href="/"
+          >
+            miniTools
+          </Link>
+        </div>
+
+        <div>
+          <ModeToggle />
+        </div>
+      </div>
     </header>
   )
 };

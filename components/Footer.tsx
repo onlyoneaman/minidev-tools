@@ -1,12 +1,11 @@
 import Link from "next/link";
 import {FaGithub, FaTwitter} from "react-icons/fa";
 
-
 const Footer = () => {
 
   return (
     <footer
-      className="flex justify-between border-t text-sm p-3"
+      className="flex justify-between items-center border-t text-sm p-3"
     >
       <div>
         <p>© 2024</p>

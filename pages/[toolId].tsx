@@ -42,7 +42,7 @@ const ToolPage: React.FC<{ content: string }> = ({content}) => {
       {
         content && (
           <div
-            className={"p-3 mt-12 bg-granite rounded my-5"}
+            className={"p-3 mt-12 bg-white dark:bg-granite rounded my-5"}
           >
             <h2
               className={"border-b text-lg"}
