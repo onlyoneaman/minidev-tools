@@ -1,17 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Home from "@/components/Home";
+import tools from "@/components/tools/tools.json";
 
 const HomePage: React.FC = () => {
   const [query, setQuery] = React.useState('');
-
-  const tools = [
-    {
-      title: "Password Generator",
-      description: "Generate a random password",
-      link: "/password-generator"
-    }
-  ]
 
   const getTools = () => {
     if (query) {
@@ -34,7 +27,7 @@ const HomePage: React.FC = () => {
           getTools().map((tool, index) => {
             return (
               <li key={index} className="my-2">
-                <Link legacyBehavior href={tool.link}>
+                <Link legacyBehavior href={tool.id}>
                   <a className="text-blue-600 visited:text-purple-600 hover:underline">{tool.title}</a>
                 </Link>
               </li>

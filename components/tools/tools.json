@@ -1,0 +1,8 @@
+[
+  {
+    "id": "password-generator",
+    "title": "Password Generator",
+    "description": "Generate a random password",
+    "component": "PasswordGenerator"
+  }
+]
