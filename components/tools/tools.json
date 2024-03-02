@@ -4,5 +4,11 @@
     "title": "Password Generator",
     "description": "Generate a random password",
     "component": "PasswordGenerator"
+  },
+  {
+    "id": "lorem-ipsum-generator",
+    "title": "Lorem Ipsum Generator",
+    "description": "Generate a random lorem ipsum text",
+    "component": "LoremIpsumGenerator"
   }
 ]
