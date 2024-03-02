@@ -16,5 +16,11 @@
     "title": "Check GPT Bot Crawl",
     "description": "Check if a user agent is a GPT bot",
     "component": "CheckGPTBotCrawl"
+  },
+  {
+    "id": "url-encoder",
+    "title": "URL Encoder",
+    "description": "Encode a URL",
+    "component": "URLEncoder"
   }
 ]
