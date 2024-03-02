@@ -4,6 +4,7 @@ import {toast} from "sonner";
 import {Switch} from "@/components/ui/switch";
 import {Slider} from "@/components/ui/slider";
 import {Label} from "@/components/ui/label";
+import {Input} from "@/components/ui/input";
 
 const charset = {
   uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -80,10 +81,10 @@ const PasswordGenerator = () => {
 
         <div className="flex items-center justify-between">
           <Label htmlFor="passwordLength">Password Length</Label>
-          <input
+          <Input
             type="number"
             id="passwordLength"
-            className="w-16 p-2 border rounded-md text-center"
+            className="w-16 border"
             value={length}
             onChange={(e) => handleLengthChange(parseInt(e.target.value, 10))}
             min="4"

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import {toast} from "sonner";
+import {Textarea} from "@/components/ui/textarea";
+import {Input} from "@/components/ui/input";
 
 const URLEncoder = () => {
   const [input, setInput] = useState('');
@@ -32,8 +34,7 @@ const URLEncoder = () => {
         onSubmit={handleEncode}
       >
         <label htmlFor="input">Text to Encode:</label>
-        <input
-          className="bg-transparent border-b border-gray-500 focus:outline-none focus:border-gray-700 transition-colors duration-300 ease-in-out"
+        <Input
           id="input"
           type="text"
           value={input}
@@ -45,9 +46,8 @@ const URLEncoder = () => {
         </Button>
         <div className="mt-4">
           <label htmlFor="encodedResult" className="block mb-2">Encoded Result:</label>
-          <textarea
+          <Textarea
             id="encodedResult"
-            className="w-full h-24 bg-transparent border border-gray-500 focus:outline-none focus:border-gray-700 transition-colors duration-300 ease-in-out"
             readOnly
             value={encodedResult}
           />

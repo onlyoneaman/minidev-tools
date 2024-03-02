@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {Button} from "@/components/ui/button";
 import {toast} from "sonner";
+import {Input} from "@/components/ui/input";
+import {Textarea} from "@/components/ui/textarea";
 
 const Base64Decoder = () => {
   const [input, setInput] = useState('');
@@ -29,8 +31,7 @@ const Base64Decoder = () => {
     <div>
       <form className="flex flex-col space-y-4" onSubmit={handleDecode}>
         <label htmlFor="input">Base64 Encoded Text:</label>
-        <input
-          className="bg-transparent border-b border-gray-500 focus:outline-none focus:border-gray-700 transition-colors duration-300 ease-in-out"
+        <Input
           id="input"
           type="text"
           value={input}
@@ -40,9 +41,8 @@ const Base64Decoder = () => {
         <Button type="submit">Decode</Button>
         <div className="mt-4 space-y-2">
           <label htmlFor="decodedResult" className="block mb-2">Decoded Result:</label>
-          <textarea
+          <Textarea
             id="decodedResult"
-            className="w-full h-24 bg-transparent border border-gray-500 focus:outline-none focus:border-gray-700 transition-colors duration-300 ease-in-out"
             readOnly
             value={decodedResult}
           />
