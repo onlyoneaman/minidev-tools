@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { loremIpsum } from 'lorem-ipsum';
-import { useState } from "react";
-import { toast } from "sonner";
-import { Input } from "@/components/ui/input";
+import {Button} from "@/components/ui/button";
+import {loremIpsum} from 'lorem-ipsum';
+import {useState} from "react";
+import {toast} from "sonner";
+import {Input} from "@/components/ui/input";
 import {LoremUnit} from "lorem-ipsum/types/src/constants/units";
+import {Textarea} from "@/components/ui/textarea";
 
 const LoremIpsumGenerator = () => {
   const [loremText, setLoremText] = useState('');
@@ -73,11 +74,12 @@ const LoremIpsumGenerator = () => {
         </Button>
       </div>
 
-      <textarea
+      <Textarea
         readOnly
         value={loremText}
         className="w-full h-40 p-4 bg-transparent rounded-lg border border-gray-300 shadow-sm"
       />
+
     </div>
   );
 };
