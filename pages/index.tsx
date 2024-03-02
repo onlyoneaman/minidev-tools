@@ -14,7 +14,6 @@ const HomePage: React.FC = () => {
   ]
 
   const getTools = () => {
-    console.log('query', query)
     if (query) {
       return tools.filter(tool => tool.title.toLowerCase().includes(query.toLowerCase()))
     }
