@@ -1,8 +1,8 @@
-## Mini Tools
+## MiniDev Tools
 
-This is a simple project to create a mini tools which are often used.
+This is a project to create minidev tools which are often used.
 
-You can checkout it here [Mini Tools](https://tools.amankumar.ai/)
+You can checkout it here [Minidev.Tools](https://minidev.tools)
 
 ### Author 
 

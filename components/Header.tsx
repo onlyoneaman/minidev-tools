@@ -13,7 +13,7 @@ const Header = () => {
             className="text-2xl font-bold hover:underline"
             href="/"
           >
-            miniTools
+            minidev.tools
           </Link>
         </div>
 

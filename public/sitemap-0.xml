@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://tools.amankumar.ai</loc><lastmod>2024-03-02T13:10:06.932Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tools.amankumar.ai/about</loc><lastmod>2024-03-02T13:10:06.933Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tools.amankumar.ai/password-generator</loc><lastmod>2024-03-02T13:10:06.933Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tools.amankumar.ai/lorem-ipsum-generator</loc><lastmod>2024-03-02T13:10:06.933Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools</loc><lastmod>2024-03-02T22:45:42.132Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/about</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/privacy-policy</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/terms-of-service</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/password-generator</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/lorem-ipsum-generator</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/check-gpt-bot-crawl</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/url-encoder</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/url-decoder</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/base64-encoder</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/base64-decoder</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/utf8-encoder</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://minidev.tools/utf8-decoder</loc><lastmod>2024-03-02T22:45:42.133Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

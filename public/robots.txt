@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tools.amankumar.ai
+Host: https://minidev.tools
 
 # Sitemaps
-Sitemap: https://tools.amankumar.ai/sitemap.xml
+Sitemap: https://minidev.tools/sitemap.xml

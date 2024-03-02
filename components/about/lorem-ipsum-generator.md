@@ -15,7 +15,7 @@ How to use Lorem Ipsum in your website, designs or photoshop?
 Generate the Loreum Ipsum based on your requirenment from above tools, copy to clipboard and use it in your website, designs or photoshop
 
 How to generate lorem ipsum text?
-To generate lorem ipsum online use mini tools lorem-ipsum-generator tool
+To generate lorem ipsum online use minidev.tools lorem-ipsum-generator tool
 
 Why is realistic data important?
 It is important that the test data generated should be real-looking data. This will help to perform any kind of simulation or testing with real data and not similar kinds of data. If your dataset is real like then the output will very effective

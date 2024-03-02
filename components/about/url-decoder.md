@@ -24,9 +24,9 @@ Python URL decoding: urllib.unquote(encoded_string)
 Javascript URL decoding: decodeURIComponent(encoded_string)
 
 How to encode and decode url online?
-To encode URL online mini tools URL encoding online tool
+To encode URL online minidev.tools URL encoding online tool
 
-And to decode URL online mini tools URL decoding online tool provides this feature.
+And to decode URL online minidev.tools URL decoding online tool provides this feature.
 
 Is this URL decoder safe & secure?
 Yes, this URL encoder is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.

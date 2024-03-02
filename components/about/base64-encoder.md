@@ -22,12 +22,12 @@ Python base64 encoding: base64.b64encode(input_string_bytes)
 Javascript base64 encoding: btoa(stringToEncode)
 
 How to do base64 encoding online?
-Using the mini tools base64 encoding online feature you can easily convert input text or images to base64
+Using the minidev.tools base64 encoding online feature you can easily convert input text or images to base64
 
 Is this base64 encoder safe & secure?
 Yes, this base64 encoder is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.
 
 How to decode base64 encoded string?
-To decode base64 encoded string use this mini tools base64 decoder online
+To decode base64 encoded string use this minidev.tools base64 decoder online
 
 Base64 encoding is also called content transfer encoding or b64

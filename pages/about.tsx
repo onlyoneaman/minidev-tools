@@ -12,7 +12,7 @@ const About = () => {
       <h2
         className={"text-lg font-bold"}
       >
-        About Mini Tools
+        About MiniDev Tools
       </h2>
       <div className={"space-y-1"}>
         <p>
@@ -20,13 +20,13 @@ const About = () => {
           thousands of dollars on improving and managing productivity.
         </p>
         <p>
-          Mini Tools is an attempt towards improving the same.
+          MiniDev Tools is an attempt towards improving the same.
           We come across many problems that are easily solvable via multiple tools.
           the problem is that these tools are scattered across web, behind paywalls,
           disturbing ads and with complex UI.
         </p>
         <p>
-          Mini Tools is trying to break the pattern by
+          MiniDev Tools is trying to break the pattern by
           <ul
             className={"list-disc ml-5"}
           >

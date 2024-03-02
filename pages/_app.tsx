@@ -11,7 +11,7 @@ const MyApp = ({Component, pageProps}: AppProps) => {
     <>
       <Head>
         <title>
-          Home - Mini Tools | minitools
+          Home - minidev.tools
         </title>
         <meta
           name="description"

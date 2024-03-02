@@ -3,7 +3,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <p>
-        Privacy Policy for Mini Tools
+        Privacy Policy for MiniDev Tools
       </p>
 
       <p>
@@ -15,9 +15,9 @@ const PrivacyPolicy = () => {
           Introduction
           {
             `
-            At Mini Tools ("we", "us", "our"), we respect your privacy and are committed to protecting it through our
+            At MiniDev Tools ("we", "us", "our"), we respect your privacy and are committed to protecting it through our
           compliance with this policy. This policy describes the types of information we may collect from you or that you
-          may provide when you use our Mini Tools application ("App") and our practices for collecting, using,
+          may provide when you use our MiniDev Tools application ("App") and our practices for collecting, using,
           maintaining, protecting, and disclosing that information.
             `
           }
@@ -91,7 +91,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p>
-          By using Mini Tools, you consent to our Privacy Policy.
+          By using MiniDev Tools, you consent to our Privacy Policy.
         </p>
       </div>
     </div>

@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
         setQuery={setQuery}
       />
       <h3 className="text-xl font-bold my-6">
-        Welcome to Mini Tools List
+        Welcome to MiniDev Tools List
       </h3>
       <ul className="list-disc pl-5 space-y-1">
         {

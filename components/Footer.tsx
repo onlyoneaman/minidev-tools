@@ -33,7 +33,7 @@ const Footer = () => {
           className={"font-bold tracking-wider text-md hover:underline"}
           href="/"
         >
-          miniTools
+          minidev.tools
         </Link>
         <p>© 2024</p>
         <p className={"space-x-1"}>

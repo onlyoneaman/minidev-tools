@@ -13,7 +13,7 @@ What is URL encoding called?
 URL encoding is also called as Percent-encoding
 
 How to encode url online?
-Using the mini tools URL encoding online tool feature you can easily encode any URL
+Using the minidev.tools URL encoding online tool feature you can easily encode any URL
 
 Example of URL encoding
 Check below for the simple example:
@@ -33,4 +33,4 @@ Is this URL encoder safe & secure?
 Yes, this URL encoder is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.
 
 How to decode URL encoded string?
-To decode URL encoded string use this mini tools URL decoder online
+To decode URL encoded string use this minidev.tools URL decoder online

@@ -5,7 +5,7 @@ const ToS = () => {
       <div>
         <div className="">
           <h2>
-            Terms of Service for Mini Tools
+            Terms of Service for MiniDev Tools
           </h2>
 
           <p>
@@ -17,7 +17,7 @@ const ToS = () => {
           {
             `
                       Acceptance of Terms
-          By accessing or using the Mini Tools application ("App"), you agree to be bound by these Terms of Service
+          By accessing or using the MiniDev Tools application ("App"), you agree to be bound by these Terms of Service
           ("Terms"). If you disagree with any part of the terms, then you do not have permission to access the App.
             `
           }
@@ -86,7 +86,7 @@ const ToS = () => {
         </div>
 
         <div>
-          By using Mini Tools, you consent to our Terms of Service.
+          By using Minidev Tools, you consent to our Terms of Service.
         </div>
       </div>
     </div>

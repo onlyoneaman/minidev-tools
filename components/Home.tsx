@@ -17,10 +17,10 @@ const Home = (
       <h1
         className={"text-2xl md:text-3xl font-bold uppercase tracking-wider p-4"}
       >
-        Mini Tools
+        MiniDev Tools
       </h1>
       <h2>
-        A free repository of mini tools for your needs
+        A free repository of minidev tools for your needs
       </h2>
 
       <HomeSearch
