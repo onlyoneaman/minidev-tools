@@ -21,7 +21,7 @@ const About = () => {
           </span>
           <a
             className={"underline"}
-            href={"https://github.com/onlyoneaman/mini-tools"}
+            href={"https://github.com/onlyoneaman/minidev-tools"}
             target={"_blank"}
           >
             Github
@@ -55,7 +55,7 @@ const About = () => {
         <p className={"space-x-1"}>
           Any tool missing or something new you would like to be added, or any feedback
           Reachout <a className="underline" href="mailto:2000.aman.sinha@gmail.com">here</a>, or raise a Github Issue
-          <a className="underline" href="https://github.com/onlyoneaman/mini-tools" target="_blank">here</a>
+          <a className="underline" href="https://github.com/onlyoneaman/minidev-tools" target="_blank">here</a>
         </p>
       </div>
     </div>

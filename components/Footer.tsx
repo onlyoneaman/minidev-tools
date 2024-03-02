@@ -55,7 +55,7 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            href="https://github.com/onlyoneaman/mini-tools"
+            href="https://github.com/onlyoneaman/minidev-tools"
           >
             <FaGithub className="inline"/>
           </a>
