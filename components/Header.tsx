@@ -7,7 +7,7 @@ const Header = () => {
       className="container"
     >
       <Link href="/">
-        Mini Tools
+        miniTools
       </Link>
     </header>
   )

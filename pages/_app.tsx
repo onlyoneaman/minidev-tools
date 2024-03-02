@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Layout from "@/components/Layout";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+
   return (
     <>
       <Head>
