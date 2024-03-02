@@ -4,8 +4,23 @@ import dynamic from 'next/dynamic';
 import SEO from '@/components/SEO';
 import {useRouter} from "next/router";
 import ToolLayout from "@/components/ToolLayout";
+import {GetStaticPaths, GetStaticProps} from "next";
+import {markdownToHtml} from "@/lib/markdownToHtml";
 
-const ToolPage: React.FC = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = tools.map(tool => ({ params: { toolId: tool.id } }));
+
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { toolId } = params;
+  const content = await markdownToHtml(toolId as string);
+
+  return { props: { content } };
+}
+
+const ToolPage: React.FC<{ content: string }> = ({content}) => {
   const { toolId } = useRouter().query;
   const tool = tools.find(t => t.id === toolId);
 
@@ -22,7 +37,27 @@ const ToolPage: React.FC = () => {
       tool={tool}
     >
       <SEO title={tool.title} description={tool.description} />
+
       <ToolComponent />
+
+      {
+        content && (
+          <div
+            className={"p-3 bg-granite rounded my-5"}
+          >
+            <h2
+              className={"border-b text-lg"}
+            >
+              About {tool.title}
+            </h2>
+            <div
+              className={"markdown"}
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          </div>
+        )
+      }
+
     </ToolLayout>
   );
 };
