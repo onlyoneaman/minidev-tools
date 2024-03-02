@@ -28,5 +28,17 @@
     "title": "URL Decoder",
     "description": "Decode a URL",
     "component": "URLDecoder"
+  },
+  {
+    "id": "base64-encoder",
+    "title": "Base64 Encoder",
+    "description": "Encode a string to base64",
+    "component": "Base64Encoder"
+  },
+  {
+    "id": "base64-decoder",
+    "title": "Base64 Decoder",
+    "description": "Decode a base64 string",
+    "component": "Base64Decoder"
   }
 ]

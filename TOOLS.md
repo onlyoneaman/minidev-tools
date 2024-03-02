@@ -5,5 +5,5 @@
 - [X] GPT Bot Crawl Tester
 - [X] URL Encode
 - [X] URL Decode
-- [ ] Base64 Encode
-- [ ] Base64 Decode
+- [X] Base64 Encode
+- [X] Base64 Decode
