@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import {Input} from "@/components/ui/input";
 
 type HomeSearchProps = {
   query: string;
@@ -32,13 +33,14 @@ const HomeSearch = (
     <div
       className={"p-4 rounded-lg"}
     >
-      <input
-        className={"w-full max-w-lg p-2 rounded-lg bg-transparent border border-gray-300"}
-        type="text"
-        placeholder={"Search for a tool"}
+
+      <Input
+        className="max-w-lg mx-auto"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        placeholder={"Search for a tool"}
       />
+
     </div>
   )
 };
