@@ -1,4 +1,6 @@
 import Link from "next/link";
+import {FaGithub, FaTwitter} from "react-icons/fa";
+
 
 const Footer = () => {
 
@@ -8,10 +10,30 @@ const Footer = () => {
     >
       <div>
         <p>© 2024</p>
-        <span>
-          Created by <a className="underline" target="_blank" href="https://twitter.com/onlyoneaman">Aman</a>
-            &nbsp;|&nbsp;<a target="_blank" href="https://github.com/onlyoneaman/mini-tools">Github</a>
-        </span>
+        <p className={"space-x-1"}>
+          <span>
+            Created by
+          </span>
+          <a
+            className="underline"
+            target="_blank"
+            href="https://amankumar.ai"
+          >
+            Aman
+          </a>
+          <a
+            href="https://twitter.com/onlyoneaman"
+            target="_blank"
+          >
+            <FaTwitter className="inline" />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/onlyoneaman/mini-tools"
+          >
+            <FaGithub className="inline" />
+          </a>
+        </p>
       </div>
       <div>
         <Link href={"/about"}>
