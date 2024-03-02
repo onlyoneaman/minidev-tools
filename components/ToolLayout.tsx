@@ -34,7 +34,7 @@ const ToolLayout = ({children, tool}: ToolLayoutProps) => {
             {tool.title}
           </div>
 
-          <main className="">
+          <main className="space-y-3">
             {children}
           </main>
         </div>

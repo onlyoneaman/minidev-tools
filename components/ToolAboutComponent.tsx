@@ -1,5 +1,6 @@
 import React from "react";
 import {Tool} from "@/types";
+import {Card, CardContent, CardHeader} from "@/components/ui/card";
 
 type ToolAboutComponentProps = {
   content: string;
@@ -17,19 +18,21 @@ const ToolAboutComponent = (
     <div>
       {
         content && (
-          <div
-            className={"p-3 mt-12 bg-white dark:bg-granite rounded my-5"}
-          >
-            <h2
-              className={"border-b text-lg"}
-            >
-              About {tool.title}
-            </h2>
-            <div
-              className={"markdown"}
-              dangerouslySetInnerHTML={{__html: content}}
-            />
-          </div>
+          <Card>
+            <CardHeader>
+              <h2
+                className="text-xl font-bold uppercase tracking-wider"
+              >
+                About {tool.title}
+              </h2>
+            </CardHeader>
+            <CardContent>
+              <div
+                className={"markdown"}
+                dangerouslySetInnerHTML={{__html: content}}
+              />
+            </CardContent>
+          </Card>
         )
       }
     </div>
