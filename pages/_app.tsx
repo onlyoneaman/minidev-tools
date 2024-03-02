@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import React from 'react';
 import Head from 'next/head';
+import Layout from "@/components/Layout";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -12,10 +13,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         {/* Favicon */}
         <link rel="icon" href="/public/favicon.ico" />
       </Head>
-      <div className="min-h-screen bg-white text-black">
-        <main className="container mx-auto p-4">
+      <div className="min-h-screen">
+        <Layout>
           <Component {...pageProps} />
-        </main>
+        </Layout>
       </div>
     </>
   );
