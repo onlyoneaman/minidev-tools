@@ -2,11 +2,13 @@
 
 This is a simple project to create a mini tools which are often used.
 
+You can checkout it here [Mini Tools](https://tools.amankumar.ai/)
+
 ### Author 
 
 - [Aman](https://amankumar.ai)
 
-### Getting Started
+### Run Locally
 
 First, run the development server:
 
