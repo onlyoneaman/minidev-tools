@@ -23,6 +23,7 @@ const PasswordGenerator: React.FC = () => {
     <div className="p-4">
       <Button
         onClick={handleGenerate}
+        variant="secondary"
       >
         Generate Password
       </Button>
