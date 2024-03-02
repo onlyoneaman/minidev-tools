@@ -7,10 +7,12 @@
 - [X] URL Decode
 - [X] Base64 Encode
 - [X] Base64 Decode
-- [ ] UTF-8 Encode
-- [ ] UTF-8 Decode
+- [X] UTF-8 Encode
+- [X] UTF-8 Decode
 - [ ] Fix GPT Bot Crawl (Local)
 - [ ] Credit Card Generator
 - [ ] Placeholder Image Generator
 - [ ] QR Code Generator
 - [ ] QR Code Reader
+- [ ] Password Strength Checker
+- [ ] Add Password Strength Checker to Password Generator
