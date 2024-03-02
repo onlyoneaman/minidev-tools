@@ -1,4 +1,9 @@
 ### Tools to Add
 
-- [ ] Password Generator
+- [X] Password Generator
+- [X] Lorem Ipsum Generator
 - [ ] GPT Bot Crawl Tester
+- [ ] URL Encode
+- [ ] URL Decode
+- [ ] Base64 Encode
+- [ ] Base64 Decode

@@ -15,3 +15,11 @@ First, run the development server:
 ```bash
 npm run dev
 ```
+
+### Roadmap
+
+- [ ] Maintain Favorties
+- [ ] Tool Bread Path
+- [ ] Share Button
+- [ ] Top / Recent Tools
+- [ ] Related Tools
