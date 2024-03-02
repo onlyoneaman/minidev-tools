@@ -13,7 +13,7 @@ What is URL encoding called?
 URL encoding is also called as Percent-encoding
 
 How to encode url online?
-Using the smalldev.tools URL encoding online tool feature you can easily encode any URL
+Using the mini tools URL encoding online tool feature you can easily encode any URL
 
 Example of URL encoding
 Check below for the simple example:

@@ -22,5 +22,11 @@
     "title": "URL Encoder",
     "description": "Encode a URL",
     "component": "URLEncoder"
+  },
+  {
+    "id": "url-decoder",
+    "title": "URL Decoder",
+    "description": "Decode a URL",
+    "component": "URLDecoder"
   }
 ]
