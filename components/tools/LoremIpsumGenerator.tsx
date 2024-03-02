@@ -5,6 +5,7 @@ import {toast} from "sonner";
 import {Input} from "@/components/ui/input";
 import {LoremUnit} from "lorem-ipsum/types/src/constants/units";
 import {Textarea} from "@/components/ui/textarea";
+import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 
 const LoremIpsumGenerator = () => {
   const [loremText, setLoremText] = useState('');
@@ -30,8 +31,10 @@ const LoremIpsumGenerator = () => {
       navigator.clipboard.writeText(loremText).then(() => {
         toast.success("Copied to clipboard");
       }, () => {
-        toast.error("Failed to copy");
+        toast.warning("Failed to copy");
       });
+    } else {
+      toast.warning("Nothing to copy");
     }
   };
 
@@ -47,17 +50,26 @@ const LoremIpsumGenerator = () => {
           placeholder="Number (e.g., 5)"
         />
 
-        <select
+        <Select
           value={unit}
-          onChange={(e) => changeUnit(e)}
-          className="border border-gray-300 bg-transparent shadow-sm rounded-md p-2 cursor-pointer"
+          onValueChange={(value) => changeUnit({target: {value}} as any)}
         >
-          {unitValues.map((value) => (
-            <option key={value} value={value} className="capitalize">
-              {value}
-            </option>
-          ))}
-        </select>
+          <SelectTrigger>
+            <SelectValue/>
+          </SelectTrigger>
+          <SelectContent>
+            {
+              unitValues.map((value) => (
+                <SelectItem
+                  key={value}
+                  value={value}
+                >
+                  {value}
+                </SelectItem>
+              ))
+            }
+          </SelectContent>
+        </Select>
       </div>
 
       <div className="flex justify-center space-x-2">
@@ -77,7 +89,7 @@ const LoremIpsumGenerator = () => {
       <Textarea
         readOnly
         value={loremText}
-        className="w-full h-40 p-4 bg-transparent rounded-lg border border-gray-300 shadow-sm"
+        className="h-40"
       />
 
     </div>
