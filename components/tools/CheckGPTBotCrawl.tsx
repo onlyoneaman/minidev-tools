@@ -7,7 +7,7 @@ export const CheckGPTBotCrawl = () => {
   const [resultMessage, setResultMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const checkRobotsTxt = async (event) => {
+  const checkRobotsTxt = async (event: any) => {
     if (loading) return;
     setLoading(true);
     setResult(null);

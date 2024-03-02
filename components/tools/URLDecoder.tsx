@@ -6,7 +6,7 @@ const URLDecoder = () => {
   const [input, setInput] = useState('');
   const [decodedResult, setDecodedResult] = useState('');
 
-  const handleDecode = (event) => {
+  const handleDecode = (event: any) => {
     event.preventDefault(); // Prevent form submission
     const decoded = decodeURIComponent(input);
     setDecodedResult(decoded);

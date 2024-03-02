@@ -6,7 +6,7 @@ const URLEncoder = () => {
   const [input, setInput] = useState('');
   const [encodedResult, setEncodedResult] = useState('');
 
-  const handleEncode = (event) => {
+  const handleEncode = (event: any) => {
     event.preventDefault(); // Prevent form submission
     const encoded = encodeURIComponent(input);
     setEncodedResult(encoded);
