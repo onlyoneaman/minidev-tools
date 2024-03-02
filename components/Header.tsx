@@ -1,7 +1,9 @@
 const Header = () => {
 
   return (
-    <header>
+    <header
+      className="container"
+    >
       <h1>
         Mini Tools
       </h1>
