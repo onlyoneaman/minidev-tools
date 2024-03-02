@@ -1,11 +1,12 @@
 import Link from "next/link";
 import {ModeToggle} from "@/components/ModeToggle";
+import GitHubButton from 'react-github-button'
 
 const Header = () => {
 
   return (
     <header
-      className="container"
+      className="container px-1"
     >
       <div className={"flex justify-between items-center"}>
         <div>
@@ -17,8 +18,14 @@ const Header = () => {
           </Link>
         </div>
 
-        <div>
-          <ModeToggle />
+        <div className={"flex items-center justify-center gap-3"}>
+          <GitHubButton
+            type="stargazers"
+            namespace="onlyoneaman"
+            repo="minidev-tools"
+            size="large"
+          />
+          <ModeToggle/>
         </div>
       </div>
     </header>
