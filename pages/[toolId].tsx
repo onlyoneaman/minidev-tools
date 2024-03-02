@@ -1,11 +1,11 @@
 import React from 'react';
 import tools from '@/components/tools/tools.json';
 import dynamic from 'next/dynamic';
-import SEO from '@/components/SEO';
 import {useRouter} from "next/router";
 import ToolLayout from "@/components/ToolLayout";
 import {GetStaticPaths, GetStaticProps} from "next";
 import {markdownToHtml} from "@/lib/markdownToHtml";
+import ToolAboutComponent from "@/components/ToolAboutComponent";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = tools.map(tool => ({ params: { toolId: tool.id } }));
@@ -35,27 +35,13 @@ const ToolPage: React.FC<{ content: string }> = ({content}) => {
     <ToolLayout
       tool={tool}
     >
-      <SEO title={tool.title} description={tool.description} />
 
       <ToolComponent />
 
-      {
-        content && (
-          <div
-            className={"p-3 mt-12 bg-white dark:bg-granite rounded my-5"}
-          >
-            <h2
-              className={"border-b text-lg"}
-            >
-              About {tool.title}
-            </h2>
-            <div
-              className={"markdown"}
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
-          </div>
-        )
-      }
+      <ToolAboutComponent
+        content={content}
+        tool={tool}
+      />
 
     </ToolLayout>
   );
