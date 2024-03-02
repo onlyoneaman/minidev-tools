@@ -21,14 +21,14 @@ const HomePage: React.FC = () => {
         query={query}
         setQuery={setQuery}
       />
-      <h1 className="text-2xl font-bold my-6">
+      <h3 className="text-xl font-bold my-6">
         Welcome to Mini Tools List
-      </h1>
-      <ul className="list-disc pl-5">
+      </h3>
+      <ul className="list-disc pl-5 space-y-1">
         {
           toolsToShow.length>0 ? toolsToShow.map((tool, index) => {
             return (
-              <li key={index} className="my-2">
+              <li key={index}>
                 <Link legacyBehavior href={tool.id}>
                   <a className="text-blue-600 visited:text-purple-600 hover:underline">{tool.title}</a>
                 </Link>
