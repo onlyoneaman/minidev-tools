@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export default async (req, res) => {
     // Get the website URL from the query
     const { url } = req.query;
