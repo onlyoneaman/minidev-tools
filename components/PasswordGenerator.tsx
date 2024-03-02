@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Button} from "@/components/ui/button";
 
 const generatePassword = (length: number) => {
   const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -20,9 +21,11 @@ const PasswordGenerator: React.FC = () => {
 
   return (
     <div className="p-4">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleGenerate}>
+      <Button
+        onClick={handleGenerate}
+      >
         Generate Password
-      </button>
+      </Button>
       {password && <p className="mt-4">Generated Password: {password}</p>}
     </div>
   );
