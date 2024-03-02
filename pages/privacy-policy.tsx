@@ -13,10 +13,14 @@ const PrivacyPolicy = () => {
       <div>
         <p>
           Introduction
-          At Mini Tools ("we", "us", "our"), we respect your privacy and are committed to protecting it through our
+          {
+            `
+            At Mini Tools ("we", "us", "our"), we respect your privacy and are committed to protecting it through our
           compliance with this policy. This policy describes the types of information we may collect from you or that you
           may provide when you use our Mini Tools application ("App") and our practices for collecting, using,
           maintaining, protecting, and disclosing that information.
+            `
+          }
         </p>
 
         <br />
@@ -41,10 +45,14 @@ const PrivacyPolicy = () => {
         </p>
 
         <p>
-          Use of Information
+          {
+            `
+            Use of Information
           The analytics data collected is used solely for improving the App and enhancing the user experience. We analyze
           the data to identify usage trends, measure the effectiveness of any changes or improvements, and to ensure the
           App's stability and security.
+            `
+          }
         </p>
 
         <p>

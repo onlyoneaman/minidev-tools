@@ -14,9 +14,13 @@ const ToS = () => {
         </div>
 
         <div>
-          Acceptance of Terms
+          {
+            `
+                      Acceptance of Terms
           By accessing or using the Mini Tools application ("App"), you agree to be bound by these Terms of Service
           ("Terms"). If you disagree with any part of the terms, then you do not have permission to access the App.
+            `
+          }
         </div>
 
         <div>
@@ -46,10 +50,14 @@ const ToS = () => {
         </div>
 
         <div>
-          Disclaimer
+          {
+            `
+                      Disclaimer
           The App and its contents are provided "as is" and "as available" without warranty of any kind, either express or
           implied, including, without limitation, warranties of merchantability, fitness for a particular purpose, or
           non-infringement.
+            `
+          }
         </div>
 
         <div>
