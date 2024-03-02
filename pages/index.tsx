@@ -13,6 +13,8 @@ const HomePage: React.FC = () => {
     return tools
   }
 
+  const toolsToShow = getTools();
+
   return (
     <div>
       <Home
@@ -24,7 +26,7 @@ const HomePage: React.FC = () => {
       </h1>
       <ul className="list-disc pl-5">
         {
-          getTools().map((tool, index) => {
+          toolsToShow.length>0 ? toolsToShow.map((tool, index) => {
             return (
               <li key={index} className="my-2">
                 <Link legacyBehavior href={tool.id}>
@@ -32,7 +34,11 @@ const HomePage: React.FC = () => {
                 </Link>
               </li>
             )
-          })
+          }) : (
+            <span>
+              No tools found matching your search ({query})
+            </span>
+          )
         }
       </ul>
     </div>
