@@ -1,8 +1,19 @@
-export const runtime = 'edge';
+// Determine if running in a Cloudflare Worker environment
+const isCloudflareWorker = typeof Response === "function" && typeof addEventListener === "function";
+
+export const runtime = isCloudflareWorker ? 'edge' : 'node';
 
 export default async (req, res) => {
-    // Get the website URL from the query
-    const { url } = req.query;
+    let url;
+
+    if (isCloudflareWorker) {
+        // Extract URL from the Cloudflare Worker request
+        const { searchParams } = new URL(req.url);
+        url = searchParams.get('url');
+    } else {
+        // Extract URL from a typical Node.js/Express request
+        url = req.query.url;
+    }
 
     try {
         // Construct the robots.txt URL
@@ -15,10 +26,29 @@ export default async (req, res) => {
         // Simple analysis to check for GPTBot disallowance
         const isDisallowed = text.toLowerCase().includes("user-agent: gptbot") && text.toLowerCase().includes("disallow: /");
 
-        // Respond with the analysis result
-        res.status(200).json({ isDisallowed });
+        // Prepare the response
+        const result = { isDisallowed };
+
+        if (isCloudflareWorker) {
+            // Use Cloudflare Worker's way to return a response
+            return new Response(JSON.stringify(result), {
+                headers: { "Content-Type": "application/json" },
+            });
+        } else {
+            // Use Express/Node.js way to send a response
+            return res.status(200).json(result);
+        }
     } catch (error) {
         // Handle fetch errors
-        res.status(500).json({ error: 'Failed to fetch robots.txt' });
+        const errorMessage = { error: 'Failed to fetch robots.txt' };
+
+        if (isCloudflareWorker) {
+            return new Response(JSON.stringify(errorMessage), {
+                status: 500,
+                headers: { "Content-Type": "application/json" },
+            });
+        } else {
+            return res.status(500).json(errorMessage);
+        }
     }
 };
