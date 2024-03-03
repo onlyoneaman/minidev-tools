@@ -14,7 +14,7 @@ const TopToolsSection = (
   if (!topTools.length) return null;
 
   return (
-    <section className="mx-auto">
+    <section className="mx-auto text-xs md:text-sm">
       <div className="flex flex-wrap gap-x-1 gap-0 md:gap-3 items-center justify-center">
         <span className="">
           {

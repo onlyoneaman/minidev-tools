@@ -38,7 +38,7 @@ const HomePage: React.FC = () => {
               {
                 toolsToShow.map((tool) => (
                   <div
-                    className="p-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+                    className="p-2 md:p-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
                     key={tool.id}
                   >
                     <ToolCard

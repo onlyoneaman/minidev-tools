@@ -31,7 +31,7 @@ const HomeSearch = (
 
   return (
     <div
-      className={"p-4 rounded-lg"}
+      className={"p-2 md:p-4 rounded-lg"}
     >
 
       <Input

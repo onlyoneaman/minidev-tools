@@ -31,8 +31,8 @@ const ToolCard: React.FC<ToolCardProps> = (
         onClick={() => handleClick()}
       >
         <Card
-          className="p-4 h-full rounded-lg hover:shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
-          <h3 className="text-center text-lg md:text-xl font-bold tracking-wider mb-2">
+          className="p-3 md:p-4 h-full rounded-lg hover:shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
+          <h3 className="text-center text-md sm:text-lg md:text-xl font-bold tracking-wider mb-2">
             {tool.title}
           </h3>
           <p className="text-center text-xs">
