@@ -18,7 +18,7 @@ const Layout = ({children}: LayoutProps) => {
 
       <GoogleAnalytics trackPageViews />
 
-      <main className="grow container mx-auto py-5">
+      <main className="grow container mx-auto p-2 sm:p-3 md:p-5">
         {children}
       </main>
       <Footer/>
