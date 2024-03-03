@@ -31,14 +31,12 @@ const MyApp = ({Component, pageProps}: AppProps) => {
       <ThemeProvider
         attribute="class"
         defaultTheme="system"
-        // enableSystem={true}
-        // disableTransitionOnChange
+        enableSystem={true}
+        disableTransitionOnChange
       >
-        <div className="min-h-screen">
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </div>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   );

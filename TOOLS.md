@@ -14,7 +14,8 @@
 - [X] Placeholder Image Generator
 - [ ] QR Code Generator
 - [ ] QR Code Reader
-- [ ] Password Strength Checker
+- [X] Password Strength Checker
 - [ ] Add Password Strength Checker to Password Generator
 - [ ] JS Compressor
 - [ ] CSS Compressor
+- [X] String Hashing

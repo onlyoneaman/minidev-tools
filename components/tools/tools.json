@@ -64,5 +64,11 @@
     "title": "String Hashing",
     "description": "Hash a string",
     "component": "StringHashingTool"
+  },
+  {
+    "id": "password-strength-checker",
+    "title": "Password Strength Checker",
+    "description": "Check the strength of a password",
+    "component": "PasswordStrengthChecker"
   }
 ]
