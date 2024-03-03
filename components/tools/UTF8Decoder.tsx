@@ -20,7 +20,7 @@ const UTFDecoder = () => {
   };
 
   return (
-    <div className="p-4 space-y-4">
+    <>
       <Textarea
         className="w-full p-2 border rounded"
         placeholder="Enter encoded text to decode"
@@ -38,7 +38,7 @@ const UTFDecoder = () => {
         value={decoded}
         readOnly
       />
-    </div>
+    </>
   );
 };
 

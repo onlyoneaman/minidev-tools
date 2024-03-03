@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import {Input} from "@/components/ui/input";
+import {Card, CardContent} from "@/components/ui/card";
 
 export const CheckGPTBotCrawl = () => {
   const [url, setUrl] = useState('');
@@ -35,7 +36,7 @@ export const CheckGPTBotCrawl = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4 shadow-lg rounded-lg">
+    <div className="">
       <form className="flex flex-col space-y-4" onSubmit={checkRobotsTxt}>
         <label htmlFor="url" className="font-semibold">Website URL:</label>
         <Input

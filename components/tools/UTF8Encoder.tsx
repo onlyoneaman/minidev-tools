@@ -15,7 +15,7 @@ const UTF8Encoder = () => {
   };
 
   return (
-    <div className="p-4 space-y-4">
+    <>
       <Textarea
         className="w-full p-2 border rounded"
         placeholder="Enter text to encode"
@@ -29,7 +29,7 @@ const UTF8Encoder = () => {
         value={encoded}
         readOnly
       />
-    </div>
+    </>
   );
 };
 

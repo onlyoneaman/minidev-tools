@@ -29,67 +29,64 @@ const ImagePlaceholderGenerator = () => {
 
   return (
     <div className="space-y-3">
-      <Card>
-        <CardContent>
-          <div className="flex flex-col space-y-4 py-2 md:py-4">
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-3">
-              <label htmlFor="width" className="">
-                <span>Width</span>
-                <Input
-                  id="width"
-                  type="number"
-                  value={width}
-                  onChange={(e) => setWidth(Number(e.target.value))}
-                />
-              </label>
-              <label htmlFor="height" className="">
-                <span>Height</span>
-                <Input
-                  id="height"
-                  type="number"
-                  value={height}
-                  onChange={(e) => setHeight(Number(e.target.value))}
-                />
-              </label>
-            </div>
+      <div className="flex flex-col space-y-4 py-2 md:py-4">
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-3">
-              <label htmlFor="format" className="">
-                <span>Image Format</span>
-                <Input
-                  id="format"
-                  type="text"
-                  value={format}
-                  onChange={(e) => setFormat(e.target.value)}
-                />
-              </label>
-              <label htmlFor="bgColor" className="">
-                <span>Background Color</span>
-                <Input
-                  id="bgColor"
-                  type="color"
-                  value={bgColor}
-                  onChange={(e) => setBgColor(e.target.value)}
-                />
-              </label>
-              <label htmlFor="textColor" className="">
-                <span>Text Color</span>
-                <Input
-                  id="textColor"
-                  type="color"
-                  value={textColor}
-                  onChange={(e) => setTextColor(e.target.value)}
-                />
-              </label>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-3">
+          <label htmlFor="width" className="">
+            <span>Width</span>
+            <Input
+              id="width"
+              type="number"
+              value={width}
+              onChange={(e) => setWidth(Number(e.target.value))}
+            />
+          </label>
+          <label htmlFor="height" className="">
+            <span>Height</span>
+            <Input
+              id="height"
+              type="number"
+              value={height}
+              onChange={(e) => setHeight(Number(e.target.value))}
+            />
+          </label>
+        </div>
 
-            <Button onClick={handleGenerate}>
-              Generate
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-3">
+          <label htmlFor="format" className="">
+            <span>Image Format</span>
+            <Input
+              id="format"
+              type="text"
+              value={format}
+              onChange={(e) => setFormat(e.target.value)}
+            />
+          </label>
+          <label htmlFor="bgColor" className="">
+            <span>Background Color</span>
+            <Input
+              id="bgColor"
+              type="color"
+              value={bgColor}
+              onChange={(e) => setBgColor(e.target.value)}
+            />
+          </label>
+          <label htmlFor="textColor" className="">
+            <span>Text Color</span>
+            <Input
+              id="textColor"
+              type="color"
+              value={textColor}
+              onChange={(e) => setTextColor(e.target.value)}
+            />
+          </label>
+        </div>
+
+        <Button onClick={handleGenerate}>
+          Generate
+        </Button>
+      </div>
 
       {placeholderUrl && (
         <Card>

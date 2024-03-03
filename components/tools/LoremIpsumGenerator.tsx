@@ -49,67 +49,59 @@ const LoremIpsumGenerator = () => {
   };
 
   return (
-    <div className="space-y-4 p-3 max-w-lg mx-auto">
+    <>
+      <div className="flex flex-col sm:flex-row justify-center space-x-0 space-y-2 sm:space-x-3 sm:space-y-0 mb-5">
+        <Input
+          type="number"
+          min="1"
+          value={count}
+          onChange={(e) => setCount(parseInt(e.target.value, 10) || 1)}
+          className="border border-gray-300 bg-transparent shadow-sm rounded-md p-2"
+          placeholder="Number (e.g., 5)"
+        />
 
-      <Card>
-        <CardContent
-          className="py-5 space-y-5"
+        <Select
+          value={unit}
+          onValueChange={(value) => changeUnit({target: {value}} as any)}
         >
-          <div className="flex flex-col sm:flex-row justify-center space-x-0 space-y-2 sm:space-x-3 sm:space-y-0 mb-5">
-            <Input
-              type="number"
-              min="1"
-              value={count}
-              onChange={(e) => setCount(parseInt(e.target.value, 10) || 1)}
-              className="border border-gray-300 bg-transparent shadow-sm rounded-md p-2"
-              placeholder="Number (e.g., 5)"
-            />
+          <SelectTrigger>
+            <SelectValue/>
+          </SelectTrigger>
+          <SelectContent>
+            {
+              unitValues.map((value) => (
+                <SelectItem
+                  key={value}
+                  value={value}
+                >
+                  {value}
+                </SelectItem>
+              ))
+            }
+          </SelectContent>
+        </Select>
+      </div>
 
-            <Select
-              value={unit}
-              onValueChange={(value) => changeUnit({target: {value}} as any)}
-            >
-              <SelectTrigger>
-                <SelectValue/>
-              </SelectTrigger>
-              <SelectContent>
-                {
-                  unitValues.map((value) => (
-                    <SelectItem
-                      key={value}
-                      value={value}
-                    >
-                      {value}
-                    </SelectItem>
-                  ))
-                }
-              </SelectContent>
-            </Select>
-          </div>
+      <div className="flex justify-center space-x-2">
+        <Button
+          onClick={generateLoremIpsum}
+        >
+          Generate
+        </Button>
 
-          <div className="flex justify-center space-x-2">
-            <Button
-              onClick={generateLoremIpsum}
-            >
-              Generate
-            </Button>
+        <Button
+          onClick={copyToClipboard}
+        >
+          Copy
+        </Button>
+      </div>
 
-            <Button
-              onClick={copyToClipboard}
-            >
-              Copy
-            </Button>
-          </div>
-
-          <Textarea
-            readOnly
-            value={loremText}
-            className="h-40"
-          />
-        </CardContent>
-      </Card>
-
-    </div>
+      <Textarea
+        readOnly
+        value={loremText}
+        className="h-40"
+      />
+    </>
   );
 };
 

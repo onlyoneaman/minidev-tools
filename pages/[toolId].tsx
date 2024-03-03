@@ -6,6 +6,7 @@ import ToolLayout from "@/components/ToolLayout/ToolLayout";
 import {GetStaticPaths, GetStaticProps} from "next";
 import {markdownToHtml} from "@/lib/markdownToHtml";
 import ToolAboutComponent from "@/components/ToolLayout/ToolAboutComponent";
+import {Card, CardContent} from "@/components/ui/card";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = tools.map(tool => ({ params: { toolId: tool.id } }));
@@ -36,7 +37,13 @@ const ToolPage: React.FC<{ content: string }> = ({content}) => {
       tool={tool}
     >
 
-      <ToolComponent />
+      <Card>
+        <CardContent
+          className="p-4 space-y-4"
+        >
+          <ToolComponent />
+        </CardContent>
+      </Card>
 
       <ToolAboutComponent
         content={content}

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import {toast} from "sonner";
 import {Textarea} from "@/components/ui/textarea";
 import {Input} from "@/components/ui/input";
+import {Card, CardContent} from "@/components/ui/card";
 
 const URLEncoder = () => {
   const [input, setInput] = useState('');
@@ -28,7 +29,7 @@ const URLEncoder = () => {
   };
 
   return (
-    <div>
+    <>
       <form
         className="flex flex-col space-y-4"
         onSubmit={handleEncode}
@@ -58,7 +59,7 @@ const URLEncoder = () => {
           </div>
         </div>
       </form>
-    </div>
+    </>
   );
 };
 
