@@ -58,5 +58,11 @@
     "title": "Image Placeholder Generator",
     "description": "Generate a placeholder image",
     "component": "ImagePlaceholderGenerator"
+  },
+  {
+    "id": "string-hashing",
+    "title": "String Hashing",
+    "description": "Hash a string",
+    "component": "StringHashingTool"
   }
 ]

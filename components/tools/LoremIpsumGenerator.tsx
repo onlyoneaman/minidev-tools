@@ -7,7 +7,6 @@ import {LoremUnit} from "lorem-ipsum/types/src/constants/units";
 import {Textarea} from "@/components/ui/textarea";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 import {event} from "nextjs-google-analytics";
-import {Card, CardContent} from "@/components/ui/card";
 
 const LoremIpsumGenerator = () => {
   const [loremText, setLoremText] = useState('');
