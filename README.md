@@ -23,3 +23,5 @@ npm run dev
 - [ ] Share Button
 - [ ] Top / Recent Tools
 - [ ] Related Tools
+- [ ] Tool Categories
+- [ ] Blogs
