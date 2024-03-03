@@ -48,13 +48,14 @@ const JSONMinifier = () => {
         />
         <Button type="submit">Compact</Button>
         <div className="mt-4 space-y-2">
-          <label htmlFor="compactedJson" className="block mb-2">Compacted JSON:</label>
+          <label htmlFor="minifiedJson" className="block mb-2">Minified JSON:</label>
           <Textarea
-            id="compactedJson"
+            className="h-32"
+            id="minifiedJson"
             readOnly
             value={compactedJson}
           />
-          <Button onClick={handleCopy}>Copy Compacted JSON</Button>
+          <Button onClick={handleCopy}>Copy Minified JSON</Button>
         </div>
       </form>
     </div>
