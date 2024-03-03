@@ -52,5 +52,11 @@
     "title": "UTF-8 Decoder",
     "description": "Decode a UTF-8 string",
     "component": "UTF8Decoder"
+  },
+  {
+    "id": "image-placeholder-generator",
+    "title": "Image Placeholder Generator",
+    "description": "Generate a placeholder image",
+    "component": "ImagePlaceholderGenerator"
   }
 ]
