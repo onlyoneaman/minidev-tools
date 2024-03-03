@@ -9,7 +9,7 @@
 - [X] Base64 Decode
 - [X] UTF-8 Encode
 - [X] UTF-8 Decode
-- [ ] Fix GPT Bot Crawl (Local)
+- [X] Fix GPT Bot Crawl (Local)
 - [ ] Credit Card Generator
 - [X] Placeholder Image Generator
 - [ ] QR Code Generator
