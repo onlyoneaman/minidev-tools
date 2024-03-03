@@ -7,6 +7,7 @@ import {LoremUnit} from "lorem-ipsum/types/src/constants/units";
 import {Textarea} from "@/components/ui/textarea";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 import {event} from "nextjs-google-analytics";
+import {Card, CardContent} from "@/components/ui/card";
 
 const LoremIpsumGenerator = () => {
   const [loremText, setLoremText] = useState('');
@@ -48,58 +49,65 @@ const LoremIpsumGenerator = () => {
   };
 
   return (
-    <div className="space-y-4 p-4 max-w-lg mx-auto">
-      <div className="flex flex-col sm:flex-row justify-center space-x-0 space-y-2 sm:space-x-3 sm:space-y-0 mb-5">
-        <Input
-          type="number"
-          min="1"
-          value={count}
-          onChange={(e) => setCount(parseInt(e.target.value, 10) || 1)}
-          className="border border-gray-300 bg-transparent shadow-sm rounded-md p-2"
-          placeholder="Number (e.g., 5)"
-        />
+    <div className="space-y-4 p-3 max-w-lg mx-auto">
 
-        <Select
-          value={unit}
-          onValueChange={(value) => changeUnit({target: {value}} as any)}
+      <Card>
+        <CardContent
+          className="py-5 space-y-5"
         >
-          <SelectTrigger>
-            <SelectValue/>
-          </SelectTrigger>
-          <SelectContent>
-            {
-              unitValues.map((value) => (
-                <SelectItem
-                  key={value}
-                  value={value}
-                >
-                  {value}
-                </SelectItem>
-              ))
-            }
-          </SelectContent>
-        </Select>
-      </div>
+          <div className="flex flex-col sm:flex-row justify-center space-x-0 space-y-2 sm:space-x-3 sm:space-y-0 mb-5">
+            <Input
+              type="number"
+              min="1"
+              value={count}
+              onChange={(e) => setCount(parseInt(e.target.value, 10) || 1)}
+              className="border border-gray-300 bg-transparent shadow-sm rounded-md p-2"
+              placeholder="Number (e.g., 5)"
+            />
 
-      <div className="flex justify-center space-x-2">
-        <Button
-          onClick={generateLoremIpsum}
-        >
-          Generate
-        </Button>
+            <Select
+              value={unit}
+              onValueChange={(value) => changeUnit({target: {value}} as any)}
+            >
+              <SelectTrigger>
+                <SelectValue/>
+              </SelectTrigger>
+              <SelectContent>
+                {
+                  unitValues.map((value) => (
+                    <SelectItem
+                      key={value}
+                      value={value}
+                    >
+                      {value}
+                    </SelectItem>
+                  ))
+                }
+              </SelectContent>
+            </Select>
+          </div>
 
-        <Button
-          onClick={copyToClipboard}
-        >
-          Copy
-        </Button>
-      </div>
+          <div className="flex justify-center space-x-2">
+            <Button
+              onClick={generateLoremIpsum}
+            >
+              Generate
+            </Button>
 
-      <Textarea
-        readOnly
-        value={loremText}
-        className="h-40"
-      />
+            <Button
+              onClick={copyToClipboard}
+            >
+              Copy
+            </Button>
+          </div>
+
+          <Textarea
+            readOnly
+            value={loremText}
+            className="h-40"
+          />
+        </CardContent>
+      </Card>
 
     </div>
   );
