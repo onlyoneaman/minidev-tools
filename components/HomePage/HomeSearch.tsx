@@ -35,7 +35,7 @@ const HomeSearch = (
     >
 
       <Input
-        className="max-w-lg mx-auto"
+        className="text-black bg-white dark:text-white dark:bg-gray-500 max-w-lg mx-auto"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder={"Search for a tool"}

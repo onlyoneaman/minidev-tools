@@ -21,7 +21,7 @@ npm run dev
 - [ ] Maintain Favorties
 - [ ] Tool Bread Path
 - [ ] Share Button
-- [ ] Top / Recent Tools
+- [X] Top / Recent Tools
 - [ ] Related Tools
 - [ ] Tool Categories
 - [ ] Blogs

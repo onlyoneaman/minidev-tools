@@ -1,11 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
+import React, {useEffect} from 'react';
 import Home from "@/components/HomePage/Home";
 import tools from "@/components/tools/tools.json";
 import ToolCard from "@/components/HomePage/ToolCard";
+import {getMostUsedTools} from "@/utils/visitCounter";
+import {Tool} from "@/types";
 
 const HomePage: React.FC = () => {
   const [query, setQuery] = React.useState('');
+  const [topTools, setTopTools] = React.useState<Tool[]>([]);
 
   const getTools = () => {
     if (query) {
@@ -14,11 +16,21 @@ const HomePage: React.FC = () => {
     return tools;
   };
 
+  useEffect(() => {
+    const mostUsedToolIds = getMostUsedTools();
+    const topTools = tools.filter(tool => mostUsedToolIds.includes(tool.id));
+    setTopTools(topTools);
+  }, [])
+
   const toolsToShow = getTools();
 
   return (
     <div>
-      <Home query={query} setQuery={setQuery} />
+      <Home
+        query={query}
+        setQuery={setQuery}
+        topTools={topTools}
+      />
       <section className="mt-8">
         {
           toolsToShow.length > 0 ? (

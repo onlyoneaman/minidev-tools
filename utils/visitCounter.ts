@@ -29,7 +29,7 @@ export const getToolVisitCount = (toolName: string): number => {
   return parseInt(getLocalStorage(toolVisitCountKey) || '0', 10);
 };
 
-export const getMostUsedTools = (limit: number = 10): string[] => {
+export const getMostUsedTools = (limit: number = 4): string[] => {
   const toolVisitCounts = Object.entries(localStorage)
     .filter(([key, _]) => key.startsWith(TOOL_VISIT_COUNT_KEY_PREFIX))
     .map(([key, value]) => ({ toolName: key.replace(TOOL_VISIT_COUNT_KEY_PREFIX, ''), visitCount: parseInt(value) }))
