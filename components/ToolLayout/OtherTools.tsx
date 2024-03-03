@@ -2,6 +2,7 @@ import tools from '@/components/tools/tools.json';
 import {useState} from "react";
 import {Input} from "@/components/ui/input";
 import Link from "next/link";
+import {event} from "nextjs-google-analytics";
 
 const OtherTools = () => {
   const [query, setQuery] = useState('');
@@ -15,11 +16,11 @@ const OtherTools = () => {
 
   return (
     <div>
-      <h1
+      <h3
         className="text-xs text-gray-600"
       >
         Other Tools
-      </h1>
+      </h3>
 
       <Input
         className="max-w-sm"
@@ -36,6 +37,12 @@ const OtherTools = () => {
               className="block"
               key={tool.id}
               href={`/${tool.id}`}
+              onClick={() => {
+                event("other_tools_click", {
+                  category: "other_tools",
+                  label: tool.id,
+                })
+              }}
             >
               <span
                 className="text-sm text-gray-600 dark:text-gray-400 hover:underline"
