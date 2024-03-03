@@ -30,7 +30,7 @@ const ToolLayout = ({children, tool}: ToolLayoutProps) => {
         >
           <div className={"p-3 space-y-3"}>
             <h1
-              className={"text-xl md:text-3xl font-bold uppercase tracking-wider"}
+              className={"text-xl md:text-3xl font-bold tracking-wider"}
             >
               {tool.title}
             </h1>

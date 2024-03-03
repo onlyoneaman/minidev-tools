@@ -19,3 +19,4 @@
 - [ ] JS Compressor
 - [ ] CSS Compressor
 - [X] String Hashing
+- [X] JSON Minifier
