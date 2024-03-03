@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
 
   useEffect(() => {
     const mostUsedToolIds = getMostUsedTools();
-    const topTools = tools.filter(tool => mostUsedToolIds.includes(tool.id));
+    const topTools = mostUsedToolIds.map(toolId => tools.find(tool => tool.id === toolId)).filter(Boolean) as Tool[];
     setTopTools(topTools);
   }, [])
 
