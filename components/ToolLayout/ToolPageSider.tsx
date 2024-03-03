@@ -1,4 +1,4 @@
-import OtherTools from "@/components/OtherTools";
+import OtherTools from "@/components/ToolLayout/OtherTools";
 
 const ToolPageSider = () => {
 

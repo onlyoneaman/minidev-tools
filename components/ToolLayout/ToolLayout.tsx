@@ -1,7 +1,7 @@
 import React from "react";
 import {Tool} from "@/types";
 import SEO from "@/components/SEO";
-import ToolPageSider from "@/components/ToolPageSider";
+import ToolPageSider from "@/components/ToolLayout/ToolPageSider";
 
 type ToolLayoutProps = {
   children: React.ReactNode;

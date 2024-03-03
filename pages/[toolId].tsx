@@ -2,10 +2,10 @@ import React from 'react';
 import tools from '@/components/tools/tools.json';
 import dynamic from 'next/dynamic';
 import {useRouter} from "next/router";
-import ToolLayout from "@/components/ToolLayout";
+import ToolLayout from "@/components/ToolLayout/ToolLayout";
 import {GetStaticPaths, GetStaticProps} from "next";
 import {markdownToHtml} from "@/lib/markdownToHtml";
-import ToolAboutComponent from "@/components/ToolAboutComponent";
+import ToolAboutComponent from "@/components/ToolLayout/ToolAboutComponent";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = tools.map(tool => ({ params: { toolId: tool.id } }));

@@ -1,4 +1,4 @@
-import HomeSearch from "@/components/HomeSearch";
+import HomeSearch from "@/components/HomePage/HomeSearch";
 
 type HomeProps = {
   query: string;

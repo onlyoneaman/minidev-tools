@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Layouts/Header";
+import Footer from "@/components/Layouts/Footer";
 import React from "react";
 import {Toaster} from "sonner";
 import {GoogleAnalytics} from "nextjs-google-analytics";
