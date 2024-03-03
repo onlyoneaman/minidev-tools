@@ -14,7 +14,7 @@
   {
     "id": "check-gpt-bot-crawl",
     "title": "Check GPT Bot Crawl",
-    "description": "Check if a user agent is a GPT bot",
+    "description": "Check if GPT bot can crawl a URL",
     "component": "CheckGPTBotCrawl"
   },
   {
