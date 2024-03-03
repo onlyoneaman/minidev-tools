@@ -16,7 +16,10 @@ const Layout = ({children}: LayoutProps) => {
 
       <Toaster position="top-center" />
 
-      <GoogleAnalytics trackPageViews />
+      <GoogleAnalytics
+        trackPageViews
+        strategy="lazyOnload"
+      />
 
       <main className="grow container mx-auto p-2 sm:p-3 md:p-5">
         {children}
