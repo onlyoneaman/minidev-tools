@@ -11,8 +11,10 @@
 - [X] UTF-8 Decode
 - [ ] Fix GPT Bot Crawl (Local)
 - [ ] Credit Card Generator
-- [ ] Placeholder Image Generator
+- [X] Placeholder Image Generator
 - [ ] QR Code Generator
 - [ ] QR Code Reader
 - [ ] Password Strength Checker
 - [ ] Add Password Strength Checker to Password Generator
+- [ ] JS Compressor
+- [ ] CSS Compressor
