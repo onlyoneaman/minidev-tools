@@ -5,6 +5,7 @@ import {Switch} from "@/components/ui/switch";
 import {Slider} from "@/components/ui/slider";
 import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
+import {event} from "nextjs-google-analytics";
 
 const charset = {
   uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -42,7 +43,7 @@ const PasswordGenerator = () => {
   }, [length, options]);
 
   const handleLengthChange = (value: number) => {
-    const newLength = Math.max(4, Math.min(24, Number(value) )); // Ensure the length is within the allowed range
+    const newLength = Math.max(4, Math.min(24, Number(value))); // Ensure the length is within the allowed range
     setLength(newLength);
   };
 
@@ -54,6 +55,10 @@ const PasswordGenerator = () => {
   };
 
   const copyToClipboard = () => {
+    event("password_generator_copy_password", {
+      action: "copy_password",
+      label: "Password Generator"
+    })
     if (password) {
       navigator.clipboard.writeText(password);
       toast.success('Password copied to clipboard');

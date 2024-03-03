@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Home query={query} setQuery={setQuery} />
-      <section className="mt-8"> {/* Use semantic HTML tags */}
+      <section className="mt-8">
         {
           toolsToShow.length > 0 ? (
             <div className="flex flex-wrap -m-4">

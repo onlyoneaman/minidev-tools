@@ -6,6 +6,7 @@ import {Input} from "@/components/ui/input";
 import {LoremUnit} from "lorem-ipsum/types/src/constants/units";
 import {Textarea} from "@/components/ui/textarea";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
+import {event} from "nextjs-google-analytics";
 
 const LoremIpsumGenerator = () => {
   const [loremText, setLoremText] = useState('');
@@ -20,6 +21,10 @@ const LoremIpsumGenerator = () => {
       units: unit
     });
     setLoremText(text);
+    event("lorem_ipsum_generate", {
+      category: "lorem_ipsum",
+      label: ["generate", count, unit].join("_"),
+    })
   };
 
   const changeUnit = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -33,6 +38,10 @@ const LoremIpsumGenerator = () => {
       }, () => {
         toast.warning("Failed to copy");
       });
+      event("lorem_ipsum_copy_text", {
+        category: "lorem_ipsum",
+        label: "copy",
+      })
     } else {
       toast.warning("Nothing to copy");
     }

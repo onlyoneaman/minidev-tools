@@ -1,6 +1,7 @@
 import * as React from "react"
 import {MoonIcon, SunIcon} from "@radix-ui/react-icons"
 import {useTheme} from "next-themes"
+import {event} from "nextjs-google-analytics"
 
 import {Button} from "@/components/ui/button"
 import {
@@ -13,6 +14,14 @@ import {
 export function ModeToggle() {
   const {theme, setTheme} = useTheme()
 
+  const changeTheme = (newTheme: string) => {
+    setTheme(newTheme)
+    event("theme_change", {
+      category: "theme",
+      label: newTheme,
+    })
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -24,13 +33,13 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem onClick={() => changeTheme("light")}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem onClick={() => changeTheme("dark")}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem onClick={() => changeTheme("system")}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
