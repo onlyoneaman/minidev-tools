@@ -3,72 +3,91 @@
     "id": "password-generator",
     "title": "Password Generator",
     "description": "Generate a random password",
+    "longDescription": "Create a secure and unique password with our Password Generator. Customize your password with various options including length, characters, and symbols. Generate a strong password to protect your accounts and data from unauthorized access. Try our Password Generator now and enhance your online security.",
     "component": "PasswordGenerator"
   },
   {
     "id": "lorem-ipsum-generator",
     "title": "Lorem Ipsum Generator",
     "description": "Generate a random lorem ipsum text",
+    "longDescription": "Generate placeholder text for your designs and layouts with our Lorem Ipsum Generator. Customize your text with various options including length, paragraphs, and words. Create filler text for your projects and presentations with ease. Try our Lorem Ipsum Generator now and streamline your design process.",
     "component": "LoremIpsumGenerator"
   },
   {
     "id": "check-gpt-bot-crawl",
     "title": "Check GPT Bot Crawl",
     "description": "Check if GPT bot can crawl a URL",
+    "longDescription": "Check if GPT bot can crawl a URL. This tool is useful for SEO and web development. It helps you to check if a URL can be crawled by GPT bot. If the URL is not crawlable, you can take necessary actions to make it crawlable. Try our Check GPT Bot Crawl tool now and improve your website's visibility.",
     "component": "CheckGPTBotCrawl"
   },
   {
     "id": "url-encoder",
     "title": "URL Encoder",
     "description": "Encode a URL",
+    "longDescription": "Encode a URL with our URL Encoder. Convert special characters to a format that can be transmitted over the internet. Encode your URLs to ensure data integrity and prevent errors in your web applications. Try our URL Encoder now and enhance your web development process.",
     "component": "URLEncoder"
   },
   {
     "id": "url-decoder",
     "title": "URL Decoder",
     "description": "Decode a URL",
+    "longDescription": "Decode a URL with our URL Decoder. Convert encoded characters back to their original form. Decode your URLs to ensure data integrity and prevent errors in your web applications. Try our URL Decoder now and enhance your web development process.",
     "component": "URLDecoder"
   },
   {
     "id": "base64-encoder",
     "title": "Base64 Encoder",
     "description": "Encode a string to base64",
+    "longDescription": "Encode a string to base64 with our Base64 Encoder. Convert text to a format that can be transmitted over the internet. Encode your strings to ensure data integrity and prevent errors in your web applications. Try our Base64 Encoder now and enhance your web development process.",
     "component": "Base64Encoder"
   },
   {
     "id": "base64-decoder",
     "title": "Base64 Decoder",
     "description": "Decode a base64 string",
+    "longDescription": "Decode a base64 string with our Base64 Decoder. Convert encoded characters back to their original form. Decode your strings to ensure data integrity and prevent errors in your web applications. Try our Base64 Decoder now and enhance your web development process.",
     "component": "Base64Decoder"
   },
   {
     "id": "utf8-encoder",
     "title": "UTF-8 Encoder",
     "description": "Encode a string to UTF-8",
+    "longDescription": "Encode a string to UTF-8 with our UTF-8 Encoder. Convert text to a format that can be transmitted over the internet. Encode your strings to ensure data integrity and prevent errors in your web applications. Try our UTF-8 Encoder now and enhance your web development process.",
     "component": "UTF8Encoder"
   },
   {
     "id": "utf8-decoder",
     "title": "UTF-8 Decoder",
     "description": "Decode a UTF-8 string",
+    "longDescription": "Decode a UTF-8 string with our UTF-8 Decoder. Convert encoded characters back to their original form. Decode your strings to ensure data integrity and prevent errors in your web applications. Try our UTF-8 Decoder now and enhance your web development process.",
     "component": "UTF8Decoder"
   },
   {
     "id": "image-placeholder-generator",
     "title": "Image Placeholder Generator",
     "description": "Generate a placeholder image",
+    "longDescription": "Generate a placeholder image with our Image Placeholder Generator. Customize your image with various options including dimensions, text, and colors. Create placeholder images for your designs and layouts with ease. Try our Image Placeholder Generator now and streamline your design process.",
     "component": "ImagePlaceholderGenerator"
   },
   {
     "id": "string-hashing",
     "title": "String Hashing",
     "description": "Hash a string",
+    "longDescription": "Hash a string with our String Hashing Tool. Convert text to a unique hash value. Hash your strings to ensure data integrity and prevent unauthorized access in your applications. Try our String Hashing Tool now and enhance your data security.",
     "component": "StringHashingTool"
   },
   {
     "id": "password-strength-checker",
     "title": "Password Strength Checker",
     "description": "Check the strength of a password",
+    "longDescription": "Check the strength of a password with our Password Strength Checker. Analyze your password and receive a detailed report on its strength. Evaluate your password's security and make necessary adjustments to enhance its strength. Try our Password Strength Checker now and improve your online security.",
     "component": "PasswordStrengthChecker"
+  },
+  {
+    "id": "json-minifier",
+    "title": "JSON Minifier",
+    "description": "Efficiently reduce the size of your JSON data with our Minifier tool.",
+    "longDescription": "Streamline your JSON files effortlessly with our JSON Minifier. Eliminate excess whitespace and decrease file size without compromising data integrity. Perfect for optimizing performance and enhancing efficiency in your applications. Try our Minifier now and experience faster loading times and improved data transmission.",
+    "component": "JSONMinifier"
   }
 ]

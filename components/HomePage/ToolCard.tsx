@@ -25,9 +25,11 @@ const ToolCard: React.FC<ToolCardProps> = (
       href={`/${tool.id}`}
       passHref
       legacyBehavior
-      onClick={() => handleClick()}
     >
-      <a aria-label={`Go to ${tool.title}`}>
+      <a
+        aria-label={`Go to ${tool.title}`}
+        onClick={() => handleClick()}
+      >
         <Card
           className="p-4 h-full rounded-lg hover:shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
           <h3 className="text-center text-lg md:text-xl font-bold tracking-wider mb-2">

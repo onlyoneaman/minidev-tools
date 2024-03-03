@@ -13,7 +13,7 @@ const ToolLayout = ({children, tool}: ToolLayoutProps) => {
   return (
     <>
 
-      <SEO title={tool.title} description={tool.description} />
+      <SEO title={tool.title} description={tool.longDescription} />
 
       <div
         className={"flex"}
@@ -26,12 +26,17 @@ const ToolLayout = ({children, tool}: ToolLayoutProps) => {
         </div>
 
         <div
-          className="grow"
+          className="grow text-center"
         >
-          <div
-            className={"text-center text-xl md:text-3xl font-bold uppercase tracking-wider p-4"}
-          >
-            {tool.title}
+          <div className={"p-3 space-y-3"}>
+            <h1
+              className={"text-xl md:text-3xl font-bold uppercase tracking-wider"}
+            >
+              {tool.title}
+            </h1>
+            <h3 className={""}>
+              {tool.description}
+            </h3>
           </div>
 
           <main className="space-y-3">
