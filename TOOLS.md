@@ -20,3 +20,27 @@
 - [ ] CSS Compressor
 - [X] String Hashing
 - [X] JSON Minifier
+- [ ] JSON Decoder (Decode JSON to array)
+- [ ] JSON Formatter
+- [ ] XML Decode
+- [ ] JS Formatter (Beautify/ Format JS)
+- [ ] HTML Formatter (Beautify/ Format HTML)
+- [ ] CSS Formatter (Beautify/ Format CSS)
+- [ ] SQL Formatter (Beautify/ Format SQL)
+- [ ] Test Data Generator
+- [ ] HTML to Markdown
+- [ ] Markdown Editor
+- [ ] Diff Checker
+- [ ] HTML to PDF
+- [ ] Sorting List
+- [ ] Random Number Generator
+- [ ] String Utilities
+- [ ] Image to Base64
+- [ ] Base64 to Image
+- [ ] Unix Timestamp to Date
+- [ ] Date to Unix Timestamp
+- [ ] Escape Special Characters
+- [ ] Unescape Special Characters
+- [ ] Hex to Decimal
+- [ ] Decimal to Hex
+- [ ] JQuery to Vanilla JS
