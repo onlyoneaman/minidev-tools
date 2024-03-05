@@ -117,5 +117,12 @@
     "description": "Unescape special characters in a string",
     "longDescription": "Unescape special characters in a string with our Unescape Special Characters tool. Convert escaped characters back to their original form. Unescape your strings to ensure data integrity and prevent errors in your web applications. Try our Unescape Special Characters tool now and enhance your web development process.",
     "component": "UnescapeSpecialCharacters"
+  },
+  {
+    "id": "unix-timestamp-to-date",
+    "title": "Unix Timestamp to Date",
+    "description": "Convert a Unix timestamp to a date",
+    "longDescription": "Convert a Unix timestamp to a date with our Unix Timestamp to Date tool. Convert a timestamp to a human-readable date and time. Convert your timestamps to dates to ensure data integrity and prevent errors in your applications. Try our Unix Timestamp to Date tool now and enhance your data processing.",
+    "component": "UnixTimestampToDate"
   }
 ]

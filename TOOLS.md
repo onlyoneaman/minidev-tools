@@ -37,10 +37,10 @@
 - [ ] String Utilities
 - [X] Image to Base64
 - [X] Base64 to Image
-- [ ] Unix Timestamp to Date
+- [X] Unix Timestamp to Date
 - [ ] Date to Unix Timestamp
-- [ ] Escape Special Characters
-- [ ] Unescape Special Characters
+- [X] Escape Special Characters
+- [X] Unescape Special Characters
 - [ ] Hex to Decimal
 - [ ] Decimal to Hex
 - [ ] JQuery to Vanilla JS

@@ -15,7 +15,7 @@ const ToolAboutComponent = (
 ) => {
 
   return (
-    <div>
+    <div className="text-left">
       {
         content && (
           <Card>
