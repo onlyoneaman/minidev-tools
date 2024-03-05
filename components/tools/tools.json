@@ -89,5 +89,12 @@
     "description": "Efficiently reduce the size of your JSON data with our Minifier tool.",
     "longDescription": "Streamline your JSON files effortlessly with our JSON Minifier. Eliminate excess whitespace and decrease file size without compromising data integrity. Perfect for optimizing performance and enhancing efficiency in your applications. Try our Minifier now and experience faster loading times and improved data transmission.",
     "component": "JSONMinifier"
+  },
+  {
+    "id": "image-to-base64",
+    "title": "Image to Base64",
+    "description": "Convert an image to base64",
+    "longDescription": "Convert an image to base64 with our Image to Base64 tool. Encode your images to a format that can be transmitted over the internet. Convert your images to base64 to ensure data integrity and prevent errors in your web applications. Try our Image to Base64 tool now and enhance your web development process.",
+    "component": "ImageToBase64"
   }
 ]
