@@ -103,5 +103,12 @@
     "description": "Convert a base64 string to an image",
     "longDescription": "Convert a base64 string to an image with our Base64 to Image tool. Decode your base64 strings back to their original form. Convert your base64 strings to images to ensure data integrity and prevent errors in your web applications. Try our Base64 to Image tool now and enhance your web development process.",
     "component": "Base64ToImage"
+  },
+  {
+    "id": "escape-special-characters",
+    "title": "Escape Special Characters",
+    "description": "Escape special characters in a string",
+    "longDescription": "Escape special characters in a string with our Escape Special Characters tool. Convert special characters to a format that can be transmitted over the internet. Escape your strings to ensure data integrity and prevent errors in your web applications. Try our Escape Special Characters tool now and enhance your web development process.",
+    "component": "EscapeSpecialCharacter"
   }
 ]
