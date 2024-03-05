@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {Button} from "@/components/ui/button";
-import {toast} from "sonner";
-import {Textarea} from "@/components/ui/textarea";
+import React, { useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+import { Textarea } from "@/components/ui/textarea";
 
 const Base64ToImage = () => {
   const [base64String, setBase64String] = useState('');
@@ -18,6 +18,11 @@ const Base64ToImage = () => {
     } else {
       toast.warning('Please enter a Base64 string.');
     }
+  };
+
+  const handleClear = () => {
+    setBase64String('');
+    setImageSrc('');
   };
 
   const handleOpenImage = () => {
@@ -54,7 +59,12 @@ const Base64ToImage = () => {
         onChange={handleBase64Change}
         placeholder="Paste or type the Base64 string here"
       />
-      <Button onClick={handleConvert} className="mt-4">Convert to Image</Button>
+      <div className={"space-x-2"}>
+        <Button onClick={handleConvert} className="mt-4">Convert to Image</Button>
+        {base64String && (
+          <Button onClick={handleClear} className="mt-4">Clear</Button>
+        )}
+      </div>
       {imageSrc && (
         <div className="mt-4">
           <img src={imageSrc} alt="Converted" className="mx-auto max-h-40"/>
