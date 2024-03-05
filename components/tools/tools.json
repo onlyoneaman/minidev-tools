@@ -124,5 +124,12 @@
     "description": "Convert a Unix timestamp to a date",
     "longDescription": "Convert a Unix timestamp to a date with our Unix Timestamp to Date tool. Convert a timestamp to a human-readable date and time. Convert your timestamps to dates to ensure data integrity and prevent errors in your applications. Try our Unix Timestamp to Date tool now and enhance your data processing.",
     "component": "UnixTimestampToDate"
+  },
+  {
+    "id": "viewport-checker",
+    "title": "Viewport Checker",
+    "description": "Show viewport size",
+    "longDescription": "Show viewport size with our Viewport Checker tool. Check the size of the viewport in your web browser. Use this tool to ensure that your web pages are responsive and display correctly on different devices. Try our Viewport Checker tool now and enhance your web development process.",
+    "component": "ViewportChecker"
   }
 ]
