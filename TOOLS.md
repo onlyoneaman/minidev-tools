@@ -44,3 +44,10 @@
 - [ ] Hex to Decimal
 - [ ] Decimal to Hex
 - [ ] JQuery to Vanilla JS
+- [ ] Domain Availability
+- [ ] Whois Lookup
+- [ ] IP Checker
+- [ ] Link Shorterner
+- [ ] Crypto price
+- [ ] Viewport Checker
+- [ ] TV Show Lookup
