@@ -49,5 +49,5 @@
 - [ ] IP Checker
 - [ ] Link Shorterner
 - [ ] Crypto price
-- [ ] Viewport Checker
-- [ ] TV Show Lookup
+- [X] Viewport Checker
+- [X] TV Show Lookup

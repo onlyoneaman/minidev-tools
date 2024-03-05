@@ -131,5 +131,12 @@
     "description": "Show viewport size",
     "longDescription": "Show viewport size with our Viewport Checker tool. Check the size of the viewport in your web browser. Use this tool to ensure that your web pages are responsive and display correctly on different devices. Try our Viewport Checker tool now and enhance your web development process.",
     "component": "ViewportChecker"
+  },
+  {
+    "id": "tv-show-lookup",
+    "title": "TV Show Lookup",
+    "description": "Lookup TV show information",
+    "longDescription": "Lookup TV show information with our TV Show Lookup tool. Get detailed information about your favorite TV shows including title, genre, and release date. Use this tool to find new TV shows to watch and keep track of your favorite shows. Try our TV Show Lookup tool now and enhance your TV show experience.",
+    "component": "TVShowLookup"
   }
 ]
