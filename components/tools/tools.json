@@ -110,5 +110,12 @@
     "description": "Escape special characters in a string",
     "longDescription": "Escape special characters in a string with our Escape Special Characters tool. Convert special characters to a format that can be transmitted over the internet. Escape your strings to ensure data integrity and prevent errors in your web applications. Try our Escape Special Characters tool now and enhance your web development process.",
     "component": "EscapeSpecialCharacter"
+  },
+  {
+    "id": "unescape-special-characters",
+    "title": "Unescape Special Characters",
+    "description": "Unescape special characters in a string",
+    "longDescription": "Unescape special characters in a string with our Unescape Special Characters tool. Convert escaped characters back to their original form. Unescape your strings to ensure data integrity and prevent errors in your web applications. Try our Unescape Special Characters tool now and enhance your web development process.",
+    "component": "UnescapeSpecialCharacters"
   }
 ]

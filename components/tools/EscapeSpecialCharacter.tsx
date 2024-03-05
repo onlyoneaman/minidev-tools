@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button} from "@/components/ui/button";
 import {Textarea} from "@/components/ui/textarea";
+import {toast} from "sonner";
 
 const EscapeSpecialCharacters = () => {
   const [inputText, setInputText] = useState('');
@@ -34,9 +35,11 @@ const EscapeSpecialCharacters = () => {
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(escapedText)
       .then(() => {
+        toast.success('Text copied to clipboard');
         console.log('Text copied to clipboard');
       })
       .catch((error) => {
+        toast.error('Failed to copy text to clipboard');
         console.error('Failed to copy text to clipboard:', error);
       });
   };
