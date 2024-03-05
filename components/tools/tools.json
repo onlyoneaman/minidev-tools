@@ -96,5 +96,12 @@
     "description": "Convert an image to base64",
     "longDescription": "Convert an image to base64 with our Image to Base64 tool. Encode your images to a format that can be transmitted over the internet. Convert your images to base64 to ensure data integrity and prevent errors in your web applications. Try our Image to Base64 tool now and enhance your web development process.",
     "component": "ImageToBase64"
+  },
+  {
+    "id": "base64-to-image",
+    "title": "Base64 to Image",
+    "description": "Convert a base64 string to an image",
+    "longDescription": "Convert a base64 string to an image with our Base64 to Image tool. Decode your base64 strings back to their original form. Convert your base64 strings to images to ensure data integrity and prevent errors in your web applications. Try our Base64 to Image tool now and enhance your web development process.",
+    "component": "Base64ToImage"
   }
 ]

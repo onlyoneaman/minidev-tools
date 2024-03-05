@@ -35,8 +35,8 @@
 - [ ] Sorting List
 - [ ] Random Number Generator
 - [ ] String Utilities
-- [ ] Image to Base64
-- [ ] Base64 to Image
+- [X] Image to Base64
+- [X] Base64 to Image
 - [ ] Unix Timestamp to Date
 - [ ] Date to Unix Timestamp
 - [ ] Escape Special Characters
