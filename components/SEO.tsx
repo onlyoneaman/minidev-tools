@@ -5,12 +5,19 @@ interface SEOProps {
   description: string;
 }
 
-const SEO: React.FC<SEOProps> = ({ title, description }) => (
-  <Head>
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    {/* Add more meta tags as needed for SEO */}
-  </Head>
-);
+const SEO: React.FC<SEOProps> = ({ title, description }) => {
+
+  const fullTitle = `${title} | minidev.tools`;
+
+  return(
+    <Head>
+      <title>{fullTitle}</title>
+      <meta
+        name="description"
+        content={description}
+      />
+    </Head>
+  );
+};
 
 export default SEO;

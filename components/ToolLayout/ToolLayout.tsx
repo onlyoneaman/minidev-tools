@@ -13,7 +13,10 @@ const ToolLayout = ({children, tool}: ToolLayoutProps) => {
   return (
     <>
 
-      <SEO title={tool.title} description={tool.longDescription} />
+      <SEO
+        title={tool.title}
+        description={tool.longDescription}
+      />
 
       <div
         className={"flex"}
