@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="flex justify-between items-center border-t text-sm p-3"
+      className="flex border-t border-black dark:border-gray-400 my-3 justify-between items-center text-sm p-3"
     >
 
       <div>
