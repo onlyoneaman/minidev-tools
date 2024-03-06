@@ -1,0 +1,23 @@
+.tool-about-markdown {
+    @apply max-w-3xl mx-auto space-y-2;
+}
+
+.tool-about-markdown h3 {
+    @apply md:text-xl font-bold;
+}
+
+.tool-about-markdown h4 {
+    @apply md:text-lg font-bold;
+}
+
+.tool-about-markdown p {
+    @apply text-sm;
+}
+
+.tool-about-markdown code {
+    @apply bg-muted-foreground text-muted font-mono px-1;
+}
+
+.tool-about-markdown a {
+    @apply text-indigo-600 underline;
+}

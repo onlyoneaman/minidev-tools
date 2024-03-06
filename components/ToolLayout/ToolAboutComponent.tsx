@@ -28,7 +28,7 @@ const ToolAboutComponent = (
             </CardHeader>
             <CardContent>
               <div
-                className={"markdown"}
+                className={"tool-about-markdown"}
                 dangerouslySetInnerHTML={{__html: content}}
               />
             </CardContent>

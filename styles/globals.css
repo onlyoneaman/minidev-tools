@@ -1,4 +1,5 @@
 @import "react-github-button/assets/style.css";
+@import "about.css";
 
 @tailwind base;
 @tailwind components;
