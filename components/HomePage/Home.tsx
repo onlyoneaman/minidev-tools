@@ -26,8 +26,20 @@ const Home = (
           MiniDev Tools
         </h1>
         <h2>
-          An open-source, free repository of mini dev tools for your needs
+          An open-source, free repository of mini dev tools for your needs.
         </h2>
+        <p className="space-x-1">
+          <span>
+            Anything you would like to be added, or have any feedback, please let us know
+          </span>
+          <a
+            className={"text-blue-500"}
+            href="https://github.com/onlyoneaman/minidev-tools/issues/new"
+            target="_blank"
+          >
+            here
+          </a>
+        </p>
       </div>
 
       <TopToolsSection topTools={topTools} />
