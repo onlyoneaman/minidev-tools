@@ -138,5 +138,12 @@
     "description": "Lookup TV show information",
     "longDescription": "Lookup TV show information with our TV Show Lookup tool. Get detailed information about your favorite TV shows including title, genre, and release date. Use this tool to find new TV shows to watch and keep track of your favorite shows. Try our TV Show Lookup tool now and enhance your TV show experience.",
     "component": "TVShowLookup"
+  },
+  {
+    "id": "Html-To-Pdf",
+    "title": "HTML to PDF",
+    "description": "Convert HTML to PDF",
+    "longDescription": "Convert HTML to PDF with our HTML to PDF tool. Convert your HTML files to PDF documents with ease. Use this tool to create PDFs from your web pages and enhance your document management process. Try our HTML to PDF tool now and streamline your document creation process.",
+    "component": "HtmlToPdf"
   }
 ]
