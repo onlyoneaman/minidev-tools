@@ -31,7 +31,7 @@
 - [ ] HTML to Markdown
 - [ ] Markdown Editor
 - [ ] Diff Checker
-- [ ] HTML to PDF
+- [X] HTML to PDF
 - [ ] Sorting List
 - [ ] Random Number Generator
 - [ ] String Utilities
@@ -51,3 +51,4 @@
 - [ ] Crypto price
 - [X] Viewport Checker
 - [X] TV Show Lookup
+- [ ] Is It Down Right Now?
