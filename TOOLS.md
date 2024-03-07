@@ -57,4 +57,4 @@
 - [X] Viewport Checker
 - [X] TV Show Lookup
 - [ ] Is It Down Right Now?
-- [ ] Privacy Policy Generator
+- [X] Privacy Policy Generator
