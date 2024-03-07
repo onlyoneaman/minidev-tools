@@ -35,6 +35,11 @@
 - [ ] Sorting List
 - [ ] Random Number Generator
 - [ ] String Utilities
+  - [ ] Reverse String
+  - [ ] Uppercase String
+  - [ ] Lowercase String
+  - [ ] Capitalize String
+  - [ ] Remove Line Breaks
 - [X] Image to Base64
 - [X] Base64 to Image
 - [X] Unix Timestamp to Date
@@ -52,3 +57,4 @@
 - [X] Viewport Checker
 - [X] TV Show Lookup
 - [ ] Is It Down Right Now?
+- [ ] Privacy Policy Generator
