@@ -1,5 +1,5 @@
 .tool-about-markdown {
-    @apply max-w-3xl mx-auto space-y-2;
+    @apply max-w-screen-md mx-auto space-y-2 break-words;
 }
 
 .tool-about-markdown h3 {
@@ -12,6 +12,10 @@
 
 .tool-about-markdown p {
     @apply text-sm;
+}
+
+.tool-about-markdown pre {
+    @apply overflow-scroll;
 }
 
 .tool-about-markdown code {
