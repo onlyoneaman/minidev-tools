@@ -145,5 +145,12 @@
     "description": "Convert HTML to PDF",
     "longDescription": "Convert HTML to PDF with our HTML to PDF tool. Convert your HTML files to PDF documents with ease. Use this tool to create PDFs from your web pages and enhance your document management process. Try our HTML to PDF tool now and streamline your document creation process.",
     "component": "HtmlToPdf"
+  },
+  {
+    "id": "privacy-policy-generator",
+    "title": "Privacy Policy Generator",
+    "description": "Generate a privacy policy",
+    "longDescription": "Generate a privacy policy with our Privacy Policy Generator. Create a custom privacy policy for your website or app. Use this tool to ensure that your privacy policy complies with legal requirements and protects your users' privacy. Try our Privacy Policy Generator now and enhance your privacy policy creation process.",
+    "component": "PrivacyPolicyGenerator"
   }
 ]
