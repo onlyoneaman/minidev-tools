@@ -46,8 +46,8 @@ const HeadContent = () => {
         <meta property="og:type" content="website"/>
         <meta property="og:site_name" content="minidev.tools"/>
         <meta property="og:image" content={ogImage}/>
-        <meta property="og:image:width" content="1270"/>
-        <meta property="og:image:height" content="812"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
         <meta property="og:image:alt" content="minidev.tools"/>
         <meta property="og:locale" content="en_US"/>
 
