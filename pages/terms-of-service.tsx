@@ -1,7 +1,15 @@
+import {Metadata} from "next";
+import SEO from "@/components/SEO";
+
+const pageMetadata: Metadata = {
+  title: "Terms of Service",
+}
+
 const ToS = () => {
 
   return (
     <div className="">
+      <SEO title={pageMetadata.title} />
       <div>
         <div className="">
           <h2>

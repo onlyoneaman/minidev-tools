@@ -18,6 +18,20 @@ const HeadContent = () => {
 
   const fullTitle = `${title} | minidev.tools`;
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    headline: fullTitle,
+    description: description,
+    author: [
+      {
+        '@type': 'Person',
+        name: 'Aman Kumar',
+      },
+    ],
+    datePublished: '2024-03-05T08:00:00+08:00',
+  };
+
   return (
     <>
       <Head>
@@ -61,6 +75,12 @@ const HeadContent = () => {
         <meta property="twitter:domain" content="minidev.tools"/>
 
       </Head>
+      <Script
+        id="structured-data"
+        key="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(structuredData)}}
+      />
       {
         clarityId && (
           <Script

@@ -1,7 +1,15 @@
+import {Metadata} from "next";
+import SEO from "@/components/SEO";
+
+const pageMetadata: Metadata = {
+  title: "Privacy Policy",
+}
+
 const PrivacyPolicy = () => {
 
   return (
     <div>
+      <SEO title={pageMetadata.title} />
       <p>
         Privacy Policy for MiniDev Tools
       </p>
