@@ -15,10 +15,12 @@ const HeadContent = () => {
     })(window, document, "clarity", "script", "${clarityId}");
   ` : '';
 
+  const fullTitle = `${title} | minidev.tools`;
+
   return (
     <Head>
       <title>
-        {title} - minidev.tools
+        {fullTitle}
       </title>
       <meta
         name="description"
