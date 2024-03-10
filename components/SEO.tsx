@@ -15,6 +15,7 @@ const SEO: React.FC<SEOProps> = ({ title, description }) => {
       <meta
         name="description"
         content={description}
+        key="desc"
       />
     </Head>
   );
