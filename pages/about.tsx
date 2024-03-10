@@ -1,3 +1,10 @@
+import {Metadata} from "next";
+import SEO from "@/components/SEO";
+
+const pageMetadata: Metadata = {
+    title: "About MiniDev Tools",
+}
+
 const About = () => {
 
   const features = [
@@ -9,10 +16,11 @@ const About = () => {
 
   return (
     <div className={"space-y-2"}>
+      <SEO title={pageMetadata.title} />
       <h2
         className={"text-lg font-bold"}
       >
-        About MiniDev Tools
+        {String(pageMetadata.title)}
       </h2>
       <div className={"space-y-1"}>
         <p className={"space-x-1"}>
