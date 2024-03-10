@@ -21,15 +21,29 @@ const HeadContent = () => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
+    name: 'minidev.tools',
+    applicationName: 'minidev.tools',
+    applicationCategory: 'Developer Tools',
+    url: "https://minidev.tools",
+    operatingSystem: 'Any',
     headline: fullTitle,
     description: description,
-    author: [
-      {
-        '@type': 'Person',
-        name: 'Aman Kumar',
-      },
+    features: [
+      "Code Formatter",
+      "Encode/Decode",
+      "Minifiers",
     ],
     datePublished: '2024-03-05T08:00:00+08:00',
+    screenshot: [ogImage],
+    creator: {
+      '@type': 'Person',
+      name: 'Aman Kumar',
+      url: 'https://amankumar.ai',
+      sameAs: [
+        'https://twitter.com/onlyoneaman',
+        'https://github.com/onlyoneaman',
+      ]
+    }
   };
 
   return (
