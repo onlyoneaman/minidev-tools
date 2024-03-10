@@ -10,23 +10,23 @@ import {Card, CardContent} from "@/components/ui/card";
 import {increaseToolVisitCount} from "@/utils/visitCounter";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = tools.map(tool => ({ params: { toolId: tool.id } }));
+  const paths = tools.map(tool => ({params: {toolId: tool.id}}));
 
-  return { paths, fallback: false };
+  return {paths, fallback: false};
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({params}) => {
   const content = await markdownToHtml(params?.toolId as string);
 
-  return { props: { content } };
+  return {props: {content}};
 }
 
 const ToolPage: React.FC<{ content: string }> = ({content}) => {
-  const { toolId } = useRouter().query;
+  const {toolId} = useRouter().query;
   const tool = tools.find(t => t.id === toolId);
 
   useEffect(() => {
-    if(tool) {
+    if (tool) {
       increaseToolVisitCount(tool.id);
     }
   }, []);
@@ -36,7 +36,14 @@ const ToolPage: React.FC<{ content: string }> = ({content}) => {
   }
 
   const ToolComponent = dynamic(() =>
-    import(`@/components/tools/${tool.component}`)
+      import(`@/components/tools/${tool.component}`),
+    {
+      loading: () => (
+        <p>
+          Loading {tool?.title}...
+        </p>
+      ),
+    }
   );
 
   return (
@@ -48,7 +55,7 @@ const ToolPage: React.FC<{ content: string }> = ({content}) => {
         <CardContent
           className="p-4 space-y-4"
         >
-          <ToolComponent />
+          <ToolComponent/>
         </CardContent>
       </Card>
 
