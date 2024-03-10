@@ -21,6 +21,13 @@
     "component": "CheckGPTBotCrawl"
   },
   {
+    "id": "random-number-generator",
+    "title": "Random Number Generator",
+    "description": "Generate a random number",
+    "longDescription": "Generate a random number with our Random Number Generator. Customize your number with various options including minimum, maximum, and decimal places. Create a random number for your applications and simulations with ease. Try our Random Number Generator now and enhance your data processing.",
+    "component": "RandomNumberGenerator"
+  },
+  {
     "id": "url-encoder",
     "title": "URL Encoder",
     "description": "Encode a URL",

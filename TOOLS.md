@@ -33,7 +33,7 @@
 - [ ] Diff Checker
 - [X] HTML to PDF
 - [ ] Sorting List
-- [ ] Random Number Generator
+- [X] Random Number Generator
 - [ ] String Utilities
   - [ ] Reverse String
   - [ ] Uppercase String
