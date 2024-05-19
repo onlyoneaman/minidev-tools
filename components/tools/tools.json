@@ -159,5 +159,12 @@
     "description": "Generate a privacy policy",
     "longDescription": "Generate a privacy policy with our Privacy Policy Generator. Create a custom privacy policy for your website or app. Use this tool to ensure that your privacy policy complies with legal requirements and protects your users' privacy. Try our Privacy Policy Generator now and enhance your privacy policy creation process.",
     "component": "PrivacyPolicyGenerator"
+  },
+  {
+    "id": "analog-clock",
+    "title": "Analog Clock",
+    "description": "Display an analog clock",
+    "longDescription": "Display an analog clock with our Analog Clock tool. Use this tool to show the current time in a visually appealing way. Customize the clock with various options including size, color, and style. Try our Analog Clock tool now and enhance your website or app with a classic timepiece.",
+    "component": "AnalogClock"
   }
 ]
