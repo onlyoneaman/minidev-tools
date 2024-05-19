@@ -173,5 +173,12 @@
     "description": "Measure time with a stopwatch",
     "longDescription": "Measure time with a stopwatch using our Stopwatch tool. Use this tool to track time accurately and efficiently. Customize the stopwatch with various options including start, stop, and reset. Try our Stopwatch tool now and enhance your time management skills.",
     "component": "Stopwatch"
+  },
+  {
+    "id": "day-clock",
+    "title": "Day Clock",
+    "description": "Display the current day of the week",
+    "longDescription": "Display the current day of the week with our Day Clock tool. Use this tool to show the day of the week in a visually appealing way. Customize the clock with various options including size, color, and style. Try our Day Clock tool now and enhance your website or app with a simple day indicator.",
+    "component": "DayClock"
   }
 ]
