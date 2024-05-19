@@ -166,5 +166,12 @@
     "description": "Display an analog clock",
     "longDescription": "Display an analog clock with our Analog Clock tool. Use this tool to show the current time in a visually appealing way. Customize the clock with various options including size, color, and style. Try our Analog Clock tool now and enhance your website or app with a classic timepiece.",
     "component": "AnalogClock"
+  },
+  {
+    "id": "stopwatch",
+    "title": "Stopwatch",
+    "description": "Measure time with a stopwatch",
+    "longDescription": "Measure time with a stopwatch using our Stopwatch tool. Use this tool to track time accurately and efficiently. Customize the stopwatch with various options including start, stop, and reset. Try our Stopwatch tool now and enhance your time management skills.",
+    "component": "Stopwatch"
   }
 ]
