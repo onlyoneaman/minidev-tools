@@ -201,5 +201,12 @@
     "description": "Combine PDFs in the order you want.",
     "longDescription": "Merge multiple PDF files into one with our PDF Merge tool. Combine your PDF files into a single document with ease. Use this tool to organize your PDFs and streamline your document management process. Try our PDF Merge tool now and enhance your document creation process.",
     "component": "PdfMerge"
+  },
+  {
+    "id": "pretty-text-to-graph",
+    "title": "Pretty Text to Graph",
+    "description": "Convert text to a graph",
+    "longDescription": "Convert text to a graph with our Pretty Text to Graph tool. Visualize your text data in a graph format for better understanding. Use this tool to create graphs from your text data and enhance your data analysis process. Try our Pretty Text to Graph tool now and improve your data visualization.",
+    "component": "PrettyTextToGraph"
   }
 ]
