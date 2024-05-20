@@ -194,5 +194,12 @@
     "description": "Generate a random joke",
     "longDescription": "Generate a random joke with our Random Joke Generator. Get entertained by jokes from various categories including puns, dad jokes, and one-liners. Use this tool to lighten the mood and share laughter with others. Try our Random Joke Generator now and enhance your sense of humor.",
     "component": "RandomJokeGenerator"
+  },
+  {
+    "id": "pdf-merge",
+    "title": "PDF Merge",
+    "description": "Merge multiple PDF files into one",
+    "longDescription": "Merge multiple PDF files into one with our PDF Merge tool. Combine your PDF files into a single document with ease. Use this tool to organize your PDFs and streamline your document management process. Try our PDF Merge tool now and enhance your document creation process.",
+    "component": "PdfMerge"
   }
 ]
