@@ -86,7 +86,7 @@ const ImageToBase64 = () => {
           id="base64String"
           readOnly
           value={base64String}
-          className="w-full md:h-32 bg-gray-200 rounded-lg p-2"
+          className="w-full md:h-32 bg-gray-200 dark:bg-gray-600 rounded-lg p-2"
         />
         <Button onClick={handleCopy} className="w-full">Copy Base64 String</Button>
       </div>

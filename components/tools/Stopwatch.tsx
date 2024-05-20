@@ -39,10 +39,10 @@ const Stopwatch = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-6 md:p-12">
-      <div className="p-8 rounded-lg bg-white space-y-4">
+      <div className="rounded-lg space-y-4">
         <div className="flex items-center justify-center">
           <div
-            className="text-6xl font-bold text-gray-800 inline-flex min-w-[210px] mx-auto"
+            className="text-6xl font-bold inline-flex min-w-[230px] mx-auto"
           >
             <span>{formatTime(time)}</span>
             <span className="text-3xl ml-2">{Math.floor((time % 1000) / 10)

@@ -70,7 +70,7 @@ const PasswordGenerator = () => {
   }, [handleGenerate]);
 
   return (
-    <div className="p-4 space-y-5 text-center max-w-md mx-auto bg-white rounded-lg shadow-md">
+    <div className="p-4 space-y-5 text-center max-w-md mx-auto rounded-lg">
       <div
         className="p-5 bg-gray-100 rounded-md text-black font-mono text-lg select-all cursor-pointer relative"
         onClick={copyToClipboard}

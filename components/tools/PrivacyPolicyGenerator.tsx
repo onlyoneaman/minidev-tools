@@ -16,7 +16,7 @@ const PrivacyPolicyGenerator = () => {
   const [companyName, setCompanyName] = useState('');
   const [productName, setProductName] = useState('');
   const [email, setEmail] = useState('');
-  const [outputType, setOutputType] = useState('HTML');
+  const [outputType, setOutputType] = useState(outputOptions[0].value);
   const [privacyPolicy, setPrivacyPolicy] = useState('');
 
   const generatePrivacyPolicy = () => {
