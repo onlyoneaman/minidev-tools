@@ -198,7 +198,7 @@
   {
     "id": "pdf-merge",
     "title": "PDF Merge",
-    "description": "Merge multiple PDF files into one",
+    "description": "Combine PDFs in the order you want.",
     "longDescription": "Merge multiple PDF files into one with our PDF Merge tool. Combine your PDF files into a single document with ease. Use this tool to organize your PDFs and streamline your document management process. Try our PDF Merge tool now and enhance your document creation process.",
     "component": "PdfMerge"
   }
