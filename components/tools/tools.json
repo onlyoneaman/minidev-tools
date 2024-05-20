@@ -180,5 +180,12 @@
     "description": "Display the current day of the week",
     "longDescription": "Display the current day of the week with our Day Clock tool. Use this tool to show the day of the week in a visually appealing way. Customize the clock with various options including size, color, and style. Try our Day Clock tool now and enhance your website or app with a simple day indicator.",
     "component": "DayClock"
+  },
+  {
+    "id": "random-quote-generator",
+    "title": "Random Quote Generator",
+    "description": "Generate a random quote",
+    "longDescription": "Generate a random quote with our Random Quote Generator. Get inspired by quotes from famous authors, leaders, and thinkers. Use this tool to find motivation and wisdom in your daily life. Try our Random Quote Generator now and enhance your personal growth.",
+    "component": "RandomQuoteGenerator"
   }
 ]
