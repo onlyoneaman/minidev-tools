@@ -5,6 +5,7 @@ import {Badge} from "@/components/ui/badge";
 import {createPDF, mergePDF, pdfArrayToBlob} from 'pdf-actions';
 import Dropzone from 'react-dropzone';
 import {PlusIcon, ArrowLeftIcon, DownloadIcon} from '@radix-ui/react-icons';
+import {toast} from "sonner";
 
 const PdfMerge: React.FC = () => {
   const [pdfFiles, setPdfFiles] = useState<File[]>([]);
@@ -23,6 +24,10 @@ const PdfMerge: React.FC = () => {
   };
 
   const downloadPdf = () => {
+    if(!mergedPdf) {
+      toast.error('No merged PDF found');
+      return;
+    }
     const url = URL.createObjectURL(mergedPdf);
     const a = document.createElement('a');
     a.href = url;
@@ -111,9 +116,13 @@ const PdfMerge: React.FC = () => {
               <DownloadIcon className="mr-2"/> Download merged PDF
             </Button>
           </div>
-          <PDFViewer>
-            <object data={URL.createObjectURL(mergedPdf)} type="application/pdf"/>
-          </PDFViewer>
+          {
+            mergedPdf && (
+              <PDFViewer>
+                <object data={URL.createObjectURL(mergedPdf)} type="application/pdf"/>
+              </PDFViewer>
+            )
+          }
         </div>
       )}
     </div>

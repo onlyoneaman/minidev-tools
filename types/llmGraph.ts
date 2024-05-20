@@ -1,12 +1,21 @@
 type GraphNode = {
-  id: string;
-  label: string;
+  data: {
+    id: string;
+    label: string;
+    color: string;
+  },
+  position: {
+    x: number;
+    y: number;
+  }
 }
 
 type GraphEdge = {
-  source: string;
-  target: string;
-  label: string;
+  data: {
+    source: string;
+    target: string;
+    label: string;
+  }
 }
 
 export type {

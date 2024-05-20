@@ -46,7 +46,7 @@ const safetySettings = [
 
 const PrettyTextToGraph = () => {
   const [text, setText] = useState('');
-  const [elements, setElements] = useState([]);
+  const [elements, setElements] = useState<(GraphNode | GraphEdge)[]>([]);
   const [loading, setLoading] = useState(false);
 
   const createGraph = async () => {
@@ -85,11 +85,11 @@ const PrettyTextToGraph = () => {
       const result = await chatSession.sendMessage(text);
       const resultText = result.response.text();
       const resultJson = JSON.parse(resultText);
-      let elements: (GraphEdge | GraphNode)[] = [];
-      resultJson.nodes.map((node: GraphNode) => {
+      let elements: (GraphNode | GraphEdge)[] = [];
+      resultJson.nodes.map((node: {label: string}) => {
         elements.push({
           data: {
-            id: node.id || node.label,
+            id: node.label,
             label: node.label,
             color: colors[colorIndex % colors.length],
           },
@@ -100,7 +100,7 @@ const PrettyTextToGraph = () => {
         });
         colorIndex++;
       });
-      resultJson.edges.map((edge: GraphEdge) => {
+      resultJson.edges.map((edge: {source: string, target: string, label: string}) => {
         elements.push({
           data: {
             source: edge.source,
@@ -110,7 +110,6 @@ const PrettyTextToGraph = () => {
           }
         });
       });
-      console.log('Graph data:', elements);
       setElements(elements);
     } catch (error) {
       console.error('Error fetching graph data:', error);
