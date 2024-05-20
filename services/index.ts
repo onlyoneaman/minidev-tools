@@ -1,5 +1,5 @@
-import quoteApis from "@/services/quoteApis";
+import randomDataApis from "@/services/randomDataApis";
 
 export const services = {
-  quoteApis
+  randomDataApis
 }

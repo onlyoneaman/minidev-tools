@@ -187,5 +187,12 @@
     "description": "Generate a random quote",
     "longDescription": "Generate a random quote with our Random Quote Generator. Get inspired by quotes from famous authors, leaders, and thinkers. Use this tool to find motivation and wisdom in your daily life. Try our Random Quote Generator now and enhance your personal growth.",
     "component": "RandomQuoteGenerator"
+  },
+  {
+    "id": "random-joke-generator",
+    "title": "Random Joke Generator",
+    "description": "Generate a random joke",
+    "longDescription": "Generate a random joke with our Random Joke Generator. Get entertained by jokes from various categories including puns, dad jokes, and one-liners. Use this tool to lighten the mood and share laughter with others. Try our Random Joke Generator now and enhance your sense of humor.",
+    "component": "RandomJokeGenerator"
   }
 ]

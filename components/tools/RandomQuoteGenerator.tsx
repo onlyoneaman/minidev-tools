@@ -15,7 +15,7 @@ const RandomQuoteGenerator: React.FC = () => {
   const fetchRandomQuote = async () => {
     setLoading(true);
     try {
-      const response = await services.quoteApis.get_quotes({});
+      const response = await services.randomDataApis.get_quotes({});
       // const data: Quote[] = await response.json();
       const data: Quote[] = response.data;
       const randomIndex = Math.floor(Math.random() * data.length);
